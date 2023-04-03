@@ -1,0 +1,4 @@
+name: Armored
+version: '${project.version}'
+main: me.armored.core.Armored
+api-version: 1.19
