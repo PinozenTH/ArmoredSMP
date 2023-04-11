@@ -7,7 +7,7 @@ import java.sql.*;
 public class Database {
     public static Connection connection;
     public Connection getConnection() throws SQLException {
-        String host = "192.168.50.100:3306";
+        String host = "127.0.0.1:3306";
         String database = "ArmoredSMP";
         String username = "adminArmored";
         String password = "password";
@@ -30,12 +30,12 @@ public class Database {
         ps.close();
     }
 
-    public static void Ban(Player player, String reason, int duration) throws SQLException {
+    public static void Ban(Player player, String reason, int durationHR) throws SQLException {
         PreparedStatement ps = connection.prepareStatement("INSERT IGNORE INTO ban(uuid, username, reason, duration) VALUES (?,?,?, NOW() + INTERVAL ? HOUR)");
         ps.setString(1, player.getUniqueId().toString());
         ps.setString(2, player.getName());
         ps.setString(3, reason);
-        ps.setInt(4, duration);
+        ps.setInt(4, durationHR);
         ps.executeUpdate();
         ps.close();
     }

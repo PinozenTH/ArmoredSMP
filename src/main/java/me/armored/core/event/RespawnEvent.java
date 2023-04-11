@@ -1,15 +1,23 @@
 package me.armored.core.event;
 
+import me.armored.core.utils.Database;
+import org.bukkit.ChatColor;
+import org.bukkit.Location;
 import org.bukkit.Material;
+import org.bukkit.World;
 import org.bukkit.enchantments.Enchantment;
+import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
+import org.bukkit.entity.TNTPrimed;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.player.PlayerRespawnEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.inventory.meta.ItemMeta;
 
+import java.sql.SQLException;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -30,26 +38,40 @@ public class RespawnEvent implements Listener {
     }
 
     @EventHandler
-    public void onPlayerRespawn(PlayerRespawnEvent event) {
+    public void onPlayerRespawn(PlayerRespawnEvent event) throws SQLException {
 
         Player player = event.getPlayer();
 
         Map<String, Integer> resultPlayerItem = checkItemLevel(player.getInventory());
-        System.out.println(resultPlayerItem.toString());
-        if (
-                resultPlayerItem.get("helmet") == 6 &&
-                resultPlayerItem.get("helmet") == 6 &&
-                resultPlayerItem.get("helmet") == 6 &&
-                resultPlayerItem.get("helmet") == 6 &&
-                resultPlayerItem.get("helmet") == 6
-        ) {
-            System.out.println(player.getName() + "is ready to get ban.");
-        }
 
         setItemPlayer(player.getInventory(), resultPlayerItem);
 
     }
 
+    @EventHandler
+    public void onPlayerDeath(PlayerDeathEvent event) throws SQLException{
+        Player player = event.getPlayer();
+        Map<String, Integer> resultPlayerItem = checkItemLevel(player.getInventory());
+        if (
+                resultPlayerItem.get("helmet") == 6 &&
+                        resultPlayerItem.get("chestplate") == 6 &&
+                        resultPlayerItem.get("leggings") == 6 &&
+                        resultPlayerItem.get("boots") == 6
+        ) {
+            player.getInventory().clear();
+            if (player.getBedSpawnLocation() != null) {
+
+                Location bedSpawnLocation = player.getBedSpawnLocation();
+                World bedSpawnWorld = player.getWorld();
+                Entity tnt = bedSpawnWorld.spawn(bedSpawnLocation, TNTPrimed.class);
+                ((TNTPrimed) tnt).setFuseTicks(200);
+
+            }
+//            player.sendMessage("Ban");
+            Database.Ban(player, ChatColor.YELLOW + "Out of life", 3);
+            player.kickPlayer("You cannot respawn right now!");
+        }
+    }
     private Map<String, Integer> checkItemLevel(PlayerInventory playerInventory) {
         Map<String, Integer> playerItem = this.playerItem;
 

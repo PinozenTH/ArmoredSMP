@@ -2,3 +2,11 @@ name: Armored
 version: '1.0-SNAPSHOT'
 main: me.armored.core.Armored
 api-version: 1.19
+
+commands:
+  ban:
+    description: "Ban player"
+
+
+  unban:
+    description: "Unban player"
