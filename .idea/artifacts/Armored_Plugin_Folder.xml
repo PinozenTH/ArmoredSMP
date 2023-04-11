@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" build-on-make="true" name="Armored-Plugin-Folder">
-    <output-path>$PROJECT_DIR$/../../Minecreaft Private/plugins</output-path>
+    <output-path>$PROJECT_DIR$/minecraft-server/plugins</output-path>
     <root id="archive" name="Armored.jar" />
   </artifact>
 </component>
