@@ -1,0 +1,5 @@
+me/armored/core/utils/Database.class
+me/armored/core/event/RespawnEvent.class
+me/armored/core/event/RespawnEvent$1.class
+me/armored/core/Armored.class
+me/armored/core/event/JoinEvent.class
