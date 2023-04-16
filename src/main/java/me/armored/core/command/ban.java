@@ -19,7 +19,7 @@ public class ban implements CommandExecutor, TabExecutor {
 
     @Override
     public boolean onCommand( CommandSender sender, Command cmd, String string, String[] args) {
-        if (!sender.isOp()) {
+        if (sender.isOp()) {
             if (args.length > 0) {
                 Player target = Bukkit.getPlayer(args[0]);
                 if (target == null) {

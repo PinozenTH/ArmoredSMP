@@ -28,11 +28,11 @@ public class JoinEvent implements Listener {
                 // player is banned, kick out and return ban reason
                 String reason = rs.getString("reason");
                 Timestamp duration = rs.getTimestamp("duration");
-                String message = ChatColor.RED + "You are banned from the Server: " + reason;
+                String message = ChatColor.RED + "You are banned from the Server" + "\n" + ChatColor.YELLOW + "Reason: " +reason;
                 if (duration != null) {
                     long millisLeft = duration.getTime() - System.currentTimeMillis();
                     if (millisLeft > 0) {
-                        message += ChatColor.YELLOW + "expires: " + TimeUnit.MICROSECONDS.toMinutes(millisLeft) + " minutes.";
+                        message += "\nexpires: " + TimeUnit.MICROSECONDS.toMinutes(millisLeft) + " minutes.";
                     }
                 }
                 e.setJoinMessage(null);
@@ -42,6 +42,5 @@ public class JoinEvent implements Listener {
         } catch (SQLException ex) {
             ex.printStackTrace();
         }
-
     }
 }
