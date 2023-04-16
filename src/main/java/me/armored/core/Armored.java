@@ -1,19 +1,19 @@
 package me.armored.core;
 
-import me.armored.core.command.ban;
-import me.armored.core.command.unban;
-import me.armored.core.event.JoinEvent;
-import me.armored.core.event.RespawnEvent;
+import me.armored.core.command.*;
+import me.armored.core.event.*;
 import me.armored.core.utils.Database;
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
+import static org.bukkit.Material.*;
+
+import org.bukkit.Material;
+import org.bukkit.inventory.Recipe;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.checkerframework.checker.signature.qual.ClassGetName;
 
 import java.sql.SQLException;
+import java.util.Iterator;
 
 public final class Armored extends JavaPlugin {
-
 
     @Override
     public void onEnable() {
@@ -28,6 +28,7 @@ public final class Armored extends JavaPlugin {
     public void registerEvents() {
         getServer().getPluginManager().registerEvents(new JoinEvent(), this);
         getServer().getPluginManager().registerEvents(new RespawnEvent(), this);
+        getServer().getPluginManager().registerEvents(new CraftEvents(), this);
     }
 
     public void loadDatabase() {
