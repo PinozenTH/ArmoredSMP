@@ -54,16 +54,15 @@ public class unban implements CommandExecutor, TabExecutor {
         List<String> commands = new ArrayList<>();
 
         if (sender.isOp()) {
-            if (args.length == 1) {
-                if (args[0].equalsIgnoreCase("setChaser")) {
-                    for (Player player : Bukkit.getOnlinePlayers()) {
-                        commands.add(player.getName());
-                    }
+            if (args.length == 0) {
+                for (Player player : Bukkit.getOnlinePlayers()) {
+                    commands.add(player.getName());
                 }
                 StringUtil.copyPartialMatches(args[0], commands, completions);
             }
 
             Collections.sort(completions);
+
             return completions;
         }
         return null;

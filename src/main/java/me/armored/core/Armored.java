@@ -2,18 +2,28 @@ package me.armored.core;
 
 import me.armored.core.command.*;
 import me.armored.core.event.*;
+import me.armored.core.utils.Cuboid;
 import me.armored.core.utils.Database;
 import org.bukkit.Bukkit;
 import static org.bukkit.Material.*;
 
 import org.bukkit.Material;
+import org.bukkit.World;
+import org.bukkit.entity.Player;
 import org.bukkit.inventory.Recipe;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Iterator;
 
 public final class Armored extends JavaPlugin {
+
+    public static World world = Bukkit.getWorld("world");
+    public static ArrayList<String> build = new ArrayList<String>();
+    public static Cuboid spawn = new Cuboid(world, 33, 81, 395, 92, 44, 458);
+    public static Cuboid farm = new Cuboid(world, 81, 64, 449, 45, 65, 454);
+    public static Cuboid barn = new Cuboid(world, 57, 72, 438, 47, 73, 415);
 
     @Override
     public void onEnable() {
@@ -23,12 +33,14 @@ public final class Armored extends JavaPlugin {
         registerEvents();
         loadCommand();
         Bukkit.getLogger().info("Armored plugin has been started");
+
     }
 
     public void registerEvents() {
         getServer().getPluginManager().registerEvents(new JoinEvent(), this);
         getServer().getPluginManager().registerEvents(new RespawnEvent(), this);
         getServer().getPluginManager().registerEvents(new CraftEvents(), this);
+        getServer().getPluginManager().registerEvents(new PlayerInteraction(), this);
     }
 
     public void loadDatabase() {
@@ -53,6 +65,10 @@ public final class Armored extends JavaPlugin {
 
         getCommand("unban").setExecutor(new unban());
         getCommand("unban").setTabCompleter(new unban());
+
+        getCommand("b").setExecutor(new build());
+        getCommand("b").setTabCompleter(new build());
+
     }
 
     @Override

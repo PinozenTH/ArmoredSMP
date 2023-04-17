@@ -10,3 +10,20 @@ commands:
 
   unban:
     description: "Unban player"
+
+
+  b:
+    description: enable/disable build mode
+    usage: /build
+    aliases: [ b, build ]
+
+
+permissions:
+  ranks.admin:
+    description: "admin"
+    children: [ranks.mod, ranks.jrmod]
+  ranks.mod:
+    description: "mod"
+    children: [ranks.jrmod]
+  ranks.jrmod:
+    description: "jrmod"
