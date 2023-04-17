@@ -18,24 +18,22 @@ public class PlayerInteraction implements Listener {
     @EventHandler
     public void onBreak(BlockBreakEvent e){ // edited by Pinont_
         Player p = e.getPlayer();
-        if (!(Armored.build.contains(p.getName())) && ((!Armored.barn.contains(e.getBlock().getLocation()) || !Armored.farm.contains(e.getBlock().getLocation())) && e.getBlock().getType().equals(Material.FARMLAND)) && Armored.spawn.contains(e.getBlock().getLocation())) {
+        if (!(Armored.build.contains(p.getName())) && (!Armored.barn.contains(e.getBlock().getLocation()) && !Armored.farm.contains(e.getBlock().getLocation())) && Armored.spawn.contains(e.getBlock().getLocation())) {
                 e.setCancelled(true);
         }
     }
     @EventHandler
     public void onSplash(PotionSplashEvent e){
         Entity entity = e.getEntity();
-        if((!Armored.barn.contains(entity.getLocation()) || !Armored.farm.contains(entity.getLocation())) && Armored.spawn.contains(entity.getLocation())){
+        if((!Armored.barn.contains(entity.getLocation()) && !Armored.farm.contains(entity.getLocation())) && Armored.spawn.contains(entity.getLocation())){
             e.setCancelled(true);
         }
     }
     @EventHandler
     public void onPlace(BlockPlaceEvent e){
         Player p = e.getPlayer();
-        if (!(Armored.build.contains(p.getName())) && Armored.spawn.contains(e.getBlockPlaced().getLocation())) {
-            if (!Armored.barn.contains(e.getBlockPlaced().getLocation()) || !Armored.farm.contains(e.getBlockPlaced().getLocation())) {
-                e.setCancelled(true);
-            }
+        if (!(Armored.build.contains(p.getName())) && (!Armored.barn.contains(e.getBlockPlaced().getLocation()) && !Armored.farm.contains(e.getBlockPlaced().getLocation())) && Armored.spawn.contains(e.getBlockPlaced().getLocation())) {
+            e.setCancelled(true);
         }
     }
     @EventHandler
@@ -45,7 +43,7 @@ public class PlayerInteraction implements Listener {
             Player p = e.getPlayer();
             if(b == null){return;}
             if (b.getType() == Material.SPRUCE_TRAPDOOR || b.getType() == Material.CAMPFIRE || b.getType() == Material.CANDLE || b.getType() == Material.OAK_TRAPDOOR || b.getType() == Material.DAYLIGHT_DETECTOR || b.getBlockData() instanceof Waterlogged || b.getType().name().startsWith("POTTED_") || b.getType() == Material.FLOWER_POT) {
-                if (!(Armored.build.contains(p.getName())) && (!Armored.barn.contains(b.getLocation()) || !Armored.farm.contains(b.getLocation())) && Armored.spawn.contains(b.getLocation())) {
+                if (!(Armored.build.contains(p.getName())) && (!Armored.barn.contains(b.getLocation()) && !Armored.farm.contains(b.getLocation())) && Armored.spawn.contains(b.getLocation())) {
                     e.setCancelled(true);
                 }
             }
@@ -57,7 +55,7 @@ public class PlayerInteraction implements Listener {
             return;
         }
         Player p = (Player) e.getEntity();
-        if((!Armored.barn.contains(p.getLocation()) || !Armored.farm.contains(p.getLocation())) && Armored.spawn.contains(p.getLocation())){
+        if((!Armored.barn.contains(p.getLocation()) && !Armored.farm.contains(p.getLocation())) && Armored.spawn.contains(p.getLocation())){
             e.setCancelled(true);
         }
     }
@@ -66,14 +64,14 @@ public class PlayerInteraction implements Listener {
         if (e.getEntity() instanceof ItemFrame) {
             if (e.getDamager() instanceof Player) {
                 Player p = (Player) e.getDamager();
-                if (!(Armored.build.contains(p.getName())) && (!Armored.barn.contains(p.getLocation()) || !Armored.farm.contains(p.getLocation())) && Armored.spawn.contains(p.getLocation())) {
+                if (!(Armored.build.contains(p.getName())) && (!Armored.barn.contains(p.getLocation()) && !Armored.farm.contains(p.getLocation())) && Armored.spawn.contains(p.getLocation())) {
                     e.setCancelled(true);
                 }
             }
             if (e.getDamager() instanceof Projectile) {
                 if (((Projectile) e.getDamager()).getShooter() instanceof Player) {
                     Player p = (Player) ((Projectile) e.getDamager()).getShooter();
-                    if (!(Armored.build.contains(p.getName())) && (!Armored.barn.contains(p.getLocation()) || !Armored.farm.contains(p.getLocation())) && Armored.spawn.contains(p.getLocation())) {
+                    if (!(Armored.build.contains(p.getName())) && (!Armored.barn.contains(p.getLocation()) && !Armored.farm.contains(p.getLocation())) && Armored.spawn.contains(p.getLocation())) {
                         e.getDamager().remove();
                         e.setCancelled(true);
                     }
@@ -85,7 +83,7 @@ public class PlayerInteraction implements Listener {
     public void onChangeBlock(EntityChangeBlockEvent e){
         if(e.getEntity() instanceof Player){
             Player p = (Player) e.getEntity();
-            if (!(Armored.build.contains(p.getName())) && (!Armored.barn.contains(p.getLocation()) || !Armored.farm.contains(p.getLocation())) && Armored.spawn.contains(p.getLocation()) && e.getBlock().getType() != Material.BIG_DRIPLEAF) {
+            if (!(Armored.build.contains(p.getName())) && (!Armored.barn.contains(p.getLocation()) && !Armored.farm.contains(p.getLocation())) && Armored.spawn.contains(p.getLocation()) && e.getBlock().getType() != Material.BIG_DRIPLEAF) {
                 e.setCancelled(true);
             }
         }else{
@@ -107,7 +105,7 @@ public class PlayerInteraction implements Listener {
     @EventHandler
     public void Arrow(ProjectileHitEvent e) {
         if (e.getEntity() instanceof Arrow) {
-            if ((!Armored.barn.contains(e.getEntity().getLocation()) || !Armored.farm.contains(e.getEntity().getLocation())) && Armored.spawn.contains(e.getEntity().getLocation())) {
+            if ((!Armored.barn.contains(e.getEntity().getLocation()) && !Armored.farm.contains(e.getEntity().getLocation())) && Armored.spawn.contains(e.getEntity().getLocation())) {
                 Arrow a = (Arrow) e.getEntity();
                 a.remove();
             }
@@ -119,7 +117,7 @@ public class PlayerInteraction implements Listener {
             Player p = (Player) e.getEntity().getShooter();
             if (p == null){return;}
             if (p.getWorld() == Bukkit.getServer().getWorld("world")){
-                if ((!Armored.barn.contains(p.getLocation()) || !Armored.farm.contains(p.getLocation())) && Armored.spawn.contains(p.getLocation())) {
+                if ((!Armored.barn.contains(p.getLocation()) && !Armored.farm.contains(p.getLocation())) && Armored.spawn.contains(p.getLocation())) {
                     e.setCancelled(true);
                 }
             }
@@ -132,7 +130,7 @@ public class PlayerInteraction implements Listener {
             Player p = (Player) e.getEntity().getShooter();
             if (p == null){t.remove();return;}
             if (p.getWorld() == Bukkit.getServer().getWorld("world")){
-                if ((!Armored.barn.contains(p.getLocation()) || !Armored.farm.contains(p.getLocation())) && Armored.spawn.contains(p.getLocation())) {
+                if ((!Armored.barn.contains(p.getLocation()) && !Armored.farm.contains(p.getLocation())) && Armored.spawn.contains(p.getLocation())) {
                     t.remove();
                 }
             }
@@ -146,7 +144,7 @@ public class PlayerInteraction implements Listener {
     public void projectileLaunch(ProjectileLaunchEvent e) {
         if (e.getEntity() instanceof Player) {
             Player p = (Player) e.getEntity();
-            if (!(Armored.build.contains(p.getName())) && (!Armored.barn.contains(p.getLocation()) || !Armored.farm.contains(p.getLocation())) && Armored.spawn.contains(p.getLocation())) {
+            if (!(Armored.build.contains(p.getName())) && (!Armored.barn.contains(p.getLocation()) && !Armored.farm.contains(p.getLocation())) && Armored.spawn.contains(p.getLocation())) {
                 e.setCancelled(true);
             }
         }
