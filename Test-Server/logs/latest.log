@@ -1,0 +1,832 @@
+[17:18:28] [ServerMain/INFO]: [AdvancedServerList] Loading Libraries for plugin...
+[17:18:28] [ServerMain/INFO]: [AdvancedServerList] Loading com.squareup.okhttp3:okhttp:4.10.0 from repo.papermc.io...
+[17:18:28] [ServerMain/INFO]: [AdvancedServerList] Loading libraries complete!
+[17:18:30] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[17:18:30] [ServerMain/INFO]: Loaded 7 recipes
+[17:18:31] [Server thread/INFO]: Starting minecraft server version 1.19.4
+[17:18:31] [Server thread/INFO]: Loading properties
+[17:18:31] [Server thread/INFO]: This server is running Paper version git-Paper-507 (MC: 1.19.4) (Implementing API version 1.19.4-R0.1-SNAPSHOT) (Git: e811927)
+[17:18:31] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:18:31] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:18:31] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+    We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
+    For more information please visit: https://github.com/PaperMC/Paper/issues/8948
+[17:18:31] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 2 worker threads, and gen parallelism of 2 threads
+[17:18:31] [Server thread/INFO]: Default game type: SURVIVAL
+[17:18:31] [Server thread/INFO]: Generating keypair
+[17:18:31] [Server thread/INFO]: Starting Minecraft server on 0.0.0.0:25565
+[17:18:31] [Server thread/INFO]: Using default channel type
+[17:18:32] [Server thread/INFO]: Paper: Using libdeflate (macOS ARM64 / Apple Silicon) compression from Velocity.
+[17:18:32] [Server thread/INFO]: Paper: Using native (macOS ARM64 / Apple Silicon) cipher from Velocity.
+[17:18:32] [Server thread/INFO]: [FastAsyncWorldEdit] Loading server plugin FastAsyncWorldEdit v2.6.0-SNAPSHOT-401;5cd9616
+[17:18:32] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@3c33d7a3]
+[17:18:32] [Server thread/INFO]: [Armored] Loading server plugin Armored v1.0-SNAPSHOT
+[17:18:32] [Server thread/INFO]: [DriveBackupV2] Loading server plugin DriveBackupV2 v1.6.0
+[17:18:32] [Server thread/INFO]: [AdvancedServerList] Loading server plugin AdvancedServerList v3.0.0
+[17:18:32] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:18:32] [Server thread/INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v2.6.0-SNAPSHOT-401;5cd9616
+[17:18:32] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] LZ4 Compression Binding loaded successfully
+[17:18:32] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] ZSTD Compression Binding loaded successfully
+[17:18:32] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[17:18:32] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[17:18:32] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.fawe.v1_19_R3.PaperweightFaweAdapter as the Bukkit adapter
+[17:18:34] [Server thread/INFO]: Preparing level "world"
+[17:18:34] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[17:18:34] [Server thread/INFO]: Time elapsed: 70 ms
+[17:18:34] [Server thread/INFO]: [Armored] Enabling Armored v1.0-SNAPSHOT
+[17:18:34] [Server thread/INFO]: Armored plugin is starting
+[17:18:34] [Server thread/INFO]: Armored connecting to database..
+[17:18:34] [Server thread/INFO]: Armored connected to database!
+[17:18:34] [Server thread/INFO]: Armored plugin has been started
+[17:18:34] [Server thread/INFO]: [DriveBackupV2] Enabling DriveBackupV2 v1.6.0
+[17:18:35] [Server thread/INFO]: ChasingClub » Config loaded!
+[17:18:35] [Server thread/INFO]: ChasingClub » Scheduling a backup to run at 12:00 PM every Monday, Tuesday, Friday, Thursday and Wednesday
+[17:18:35] [Server thread/INFO]: ChasingClub » Scheduling a backup to run at 10:00 PM every Saturday and Sunday
+[17:18:35] [Server thread/INFO]: ChasingClub » Metrics started
+[17:18:35] [Server thread/INFO]: [AdvancedServerList] Enabling AdvancedServerList v3.0.0
+[17:18:35] [Server thread/INFO]: [AdvancedServerList]            _____ _
+[17:18:35] [Server thread/INFO]: [AdvancedServerList]     /\    / ____| |
+[17:18:35] [Server thread/INFO]: [AdvancedServerList]    /  \  | (___ | |
+[17:18:35] [Server thread/INFO]: [AdvancedServerList]   / /\ \  \___ \| |
+[17:18:35] [Server thread/INFO]: [AdvancedServerList]  / ____ \ ____) | |____
+[17:18:35] [Server thread/INFO]: [AdvancedServerList] /_/    \_\_____/|______|
+[17:18:35] [Server thread/INFO]: [AdvancedServerList] 
+[17:18:35] [Server thread/INFO]: [AdvancedServerList] Starting AdvancedServerList v3.0.0...
+[17:18:35] [Server thread/INFO]: [AdvancedServerList] Platform: Paper git-Paper-507 (MC: 1.19.4)
+[17:18:35] [Server thread/INFO]: [AdvancedServerList] Loading config.yml...
+[17:18:35] [Server thread/INFO]: [AdvancedServerList] Successfully loaded config.yml!
+[17:18:35] [Server thread/INFO]: [AdvancedServerList] Loading profiles...
+[17:18:35] [Server thread/INFO]: [AdvancedServerList] Loaded default.yml
+[17:18:35] [Server thread/INFO]: [AdvancedServerList] Successfully loaded 1 profiles!
+[17:18:35] [Server thread/INFO]: [AdvancedServerList] Loading Commands...
+[17:18:35] [Server thread/INFO]: [AdvancedServerList] Registered /advancedserverlist:advancedserverlist
+[17:18:35] [Server thread/INFO]: [AdvancedServerList] Commands loaded!
+[17:18:35] [Server thread/INFO]: [AdvancedServerList] Loading events...
+[17:18:35] [Server thread/INFO]: [AdvancedServerList] Events loaded!
+[17:18:35] [Server thread/INFO]: [AdvancedServerList] Loading playercache.json...
+[17:18:35] [Server thread/INFO]: [AdvancedServerList] No playercache.json file present. Skipping...
+[17:18:35] [Server thread/INFO]: [AdvancedServerList] Loading bStats metrics. Disable it in the global config under /plugins/bstats/
+[17:18:35] [Server thread/INFO]: [AdvancedServerList] Metrics loaded!
+[17:18:35] [Server thread/INFO]: [AdvancedServerList] AdvancedServerList is ready!
+[17:18:35] [AdvancedServerList Update-Thread/INFO]: [AdvancedServerList] Checking for a new update...
+[17:18:35] [Server thread/INFO]: Starting remote control listener
+[17:18:35] [Server thread/INFO]: Thread RCON Listener started
+[17:18:35] [Server thread/INFO]: RCON running on 0.0.0.0:25568
+[17:18:35] [Server thread/INFO]: JMX monitoring enabled
+[17:18:35] [Server thread/INFO]: Running delayed init tasks
+[17:18:35] [Craft Scheduler Thread - 2 - DriveBackupV2/INFO]: ChasingClub » Checking for updates...
+[17:18:35] [Server thread/INFO]: Done (4.230s)! For help, type "help"
+[17:18:35] [Server thread/INFO]: Timings Reset
+[17:18:35] [Craft Scheduler Thread - 2 - DriveBackupV2/INFO]: ChasingClub » Sending request https://api.curseforge.com/servermods/files?projectids=383461
+[17:18:35] [Craft Scheduler Thread - 2 - DriveBackupV2/INFO]: ChasingClub » Received response for https://api.curseforge.com/servermods/files?projectids=383461 in 134.3ms
+[17:18:35] [Craft Scheduler Thread - 2 - DriveBackupV2/INFO]: ChasingClub » Req: None
+[17:18:36] [Craft Scheduler Thread - 2 - DriveBackupV2/INFO]: ChasingClub » Resp: [{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2957\/547\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2957547","gameVersion":"1.15","md5":"bd367bb25228ae095a621d736b429a42","name":"DriveBackupV2-1.0.0","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2959\/467\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2959467","gameVersion":"1.15","md5":"a2ddc47ba8d4c901a33900b1921aff1d","name":"DriveBackupV2-1.0.1","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2959\/534\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2959534","gameVersion":"1.15","md5":"e46ec216742ec49bf45ef370286db4d8","name":"DriveBackupV2-1.0.2","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2965\/924\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2965924","gameVersion":"1.15","md5":"61ac4efbbdb6c1945ee76dc1ae03b597","name":" DriveBackupV2-1.1.0","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2972\/470\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2972470","gameVersion":"1.15","md5":"96ff31341ecc55ff1e524b8d333bafb1","name":"DriveBackupV2-1.1.1","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2975\/734\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2975734","gameVersion":"1.15","md5":"6cc89859756fadc66827f3474d8bbdd4","name":" DriveBackupV2-1.2.0","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2982\/410\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2982410","gameVersion":"1.15","md5":"dc0800ccf2c4fbb7154c6fa500a57ed3","name":"DriveBackupV2-1.2.1","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2991\/768\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2991768","gameVersion":"1.16","md5":"fe230aafcf648d487c1b12f8809a14c4","name":"DriveBackupV2-1.2.3","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3012\/643\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3012643","gameVersion":"1.16","md5":"d83a38b3b33a9954716f4b399e756457","name":" DriveBackupV2-1.3.0","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3015\/900\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3015900","gameVersion":"1.16","md5":"ab78da842ba62dc3a3b5bdfe1b44b87e","name":"DriveBackupV2-1.3.1","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3024\/419\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3024419","gameVersion":"1.16","md5":"8eded9dadaac221622b39dfd0baaa6e9","name":"DriveBackupV2-1.3.2","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3039\/78\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3039078","gameVersion":"1.16","md5":"62a0b0aceafe0ec5cf7101c3926f21b1","name":"DriveBackupV2-1.3.3","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3047\/843\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3047843","gameVersion":"1.16","md5":"6bc519eb5372b15659564d37f4f71ad8","name":"DriveBackupV2-1.3.4","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3049\/311\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3049311","gameVersion":"1.16","md5":"2c09f6c637cd73900f63f59ec47f4f7a","name":"DriveBackupV2-1.3.5","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3086\/966\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3086966","gameVersion":"1.16","md5":"e3481ccdc8461d65923b26a5bf01506c","name":"DriveBackupV2-1.3.6","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3093\/903\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3093903","gameVersion":"1.16","md5":"bfebaeda0f00c06e78d738a78d62c882","name":"DriveBackupV2-1.3.7","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3203\/383\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3203383","gameVersion":"1.16","md5":"91c8b5f0f8a7fd8577a62b32490cc662","name":"DriveBackupV2-1.3.8","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3242\/690\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3242690","gameVersion":"1.16","md5":"f33b2a234c778446e4b70b64c6df983f","name":"DriveBackupV2-1.3.9","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3314\/633\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3314633","gameVersion":"1.16","md5":"f65a490a66d45368ac63f391e4a44fdd","name":" DriveBackupV2-1.4.0","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1623110400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3440\/945\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3440945","gameVersion":"1.17","md5":"a3d5965eaf0b77e470548d837491333a","name":"DriveBackupV2-1.5.2","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1623110400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3466\/443\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3466443","gameVersion":"1.17","md5":"0e222e2931dd38c6e5a13f2a4a187971","name":" DriveBackupV2-1.5.3","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1640476800000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3520\/141\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3520141","gameVersion":"1.18.1","md5":"bb13e8e2cf76d207d819727fbc3b8bfd","name":"DriveBackupV2-1.5.4","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1656374400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3680\/816\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3680816","gameVersion":"1.19.1","md5":"93c8914cb90c20580313ddcea802de5e","name":"DriveBackupV2-1.6.0","projectId":383461,"releaseType":"release"}]
+[17:18:36] [ForkJoinPool.commonPool-worker-1/INFO]: [AdvancedServerList] No new update found. You're running the latest version!
+[17:18:36] [User Authenticator #0/INFO]: UUID of player Pinont_ is 1ef0ba4a-36e1-42ee-820e-15946cc1dac9
+[17:18:37] [Server thread/INFO]: ChasingClub » Enabling automatic backups
+[17:18:37] [Server thread/INFO]: Pinont_ joined the game
+[17:18:37] [Server thread/INFO]: Pinont_[/171.100.76.72:63896] logged in with entity id 83 at ([world]68.46774257754127, 73.84410025618882, 446.11343351441343)
+[17:29:04] [Server thread/INFO]: Pinont_ lost connection: Disconnected
+[17:29:04] [Server thread/INFO]: Pinont_ left the game
+[18:19:52] [User Authenticator #1/INFO]: UUID of player Noklezaza is 40474bb8-c283-4ac7-ab2c-eaee5abe2562
+[18:19:52] [Server thread/INFO]: Disconnecting com.mojang.authlib.GameProfile@fcc7d65[id=40474bb8-c283-4ac7-ab2c-eaee5abe2562,name=Noklezaza,properties={textures=[com.mojang.authlib.properties.Property@6c392979]},legacy=false] (/171.100.76.72:64969): You are not whitelisted on this server! 
+ Visit; https://forms.gle/XTYEc211N5VwrxddA
+[18:19:52] [Server thread/INFO]: com.mojang.authlib.GameProfile@fcc7d65[id=40474bb8-c283-4ac7-ab2c-eaee5abe2562,name=Noklezaza,properties={textures=[com.mojang.authlib.properties.Property@6c392979]},legacy=false] (/171.100.76.72:64969) lost connection: You are not whitelisted on this server! 
+ Visit; https://forms.gle/XTYEc211N5VwrxddA
+[18:20:00] [User Authenticator #1/INFO]: UUID of player Noklezaza is 40474bb8-c283-4ac7-ab2c-eaee5abe2562
+[18:20:00] [Server thread/INFO]: Disconnecting com.mojang.authlib.GameProfile@7a5b1658[id=40474bb8-c283-4ac7-ab2c-eaee5abe2562,name=Noklezaza,properties={textures=[com.mojang.authlib.properties.Property@57ee140c]},legacy=false] (/171.100.76.72:64984): You are not whitelisted on this server! 
+ Visit; https://forms.gle/XTYEc211N5VwrxddA
+[18:20:00] [Server thread/INFO]: com.mojang.authlib.GameProfile@7a5b1658[id=40474bb8-c283-4ac7-ab2c-eaee5abe2562,name=Noklezaza,properties={textures=[com.mojang.authlib.properties.Property@57ee140c]},legacy=false] (/171.100.76.72:64984) lost connection: You are not whitelisted on this server! 
+ Visit; https://forms.gle/XTYEc211N5VwrxddA
+[18:20:10] [User Authenticator #1/INFO]: UUID of player Noklezaza is 40474bb8-c283-4ac7-ab2c-eaee5abe2562
+[18:20:10] [Server thread/INFO]: Disconnecting com.mojang.authlib.GameProfile@73d6c67d[id=40474bb8-c283-4ac7-ab2c-eaee5abe2562,name=Noklezaza,properties={textures=[com.mojang.authlib.properties.Property@1dcc5959]},legacy=false] (/171.100.76.72:64993): You are not whitelisted on this server! 
+ Visit; https://forms.gle/XTYEc211N5VwrxddA
+[18:20:10] [Server thread/INFO]: com.mojang.authlib.GameProfile@73d6c67d[id=40474bb8-c283-4ac7-ab2c-eaee5abe2562,name=Noklezaza,properties={textures=[com.mojang.authlib.properties.Property@1dcc5959]},legacy=false] (/171.100.76.72:64993) lost connection: You are not whitelisted on this server! 
+ Visit; https://forms.gle/XTYEc211N5VwrxddA
+[18:20:24] [User Authenticator #1/INFO]: UUID of player Pinont_ is 1ef0ba4a-36e1-42ee-820e-15946cc1dac9
+[18:20:24] [Server thread/INFO]: Pinont_ joined the game
+[18:20:24] [Server thread/INFO]: Pinont_[/171.100.76.72:65015] logged in with entity id 201 at ([world]66.34449933347129, 65.23109540810366, 414.2274770985585)
+[18:20:34] [Server thread/INFO]: Pinont_ issued server command: /whitelist add Noklezaza
+[18:20:34] [Server thread/INFO]: [Pinont_: Added Noklezaza to the whitelist]
+[18:20:35] [Server thread/INFO]: Pinont_ lost connection: Disconnected
+[18:20:35] [Server thread/INFO]: Pinont_ left the game
+[18:20:45] [User Authenticator #1/INFO]: UUID of player Noklezaza is 40474bb8-c283-4ac7-ab2c-eaee5abe2562
+[18:20:45] [Server thread/INFO]: Noklezaza joined the game
+[18:20:45] [Server thread/INFO]: Noklezaza[/171.100.76.72:65040] logged in with entity id 203 at ([world]63.5, 65.0, 435.5)
+[18:23:05] [Server thread/INFO]: Noklezaza has made the advancement [A Seedy Place]
+[18:29:30] [Server thread/INFO]: Noklezaza issued server command: /b
+[18:39:34] [Server thread/INFO]: Noklezaza lost connection: Disconnected
+[18:39:34] [Server thread/INFO]: Noklezaza left the game
+[18:40:20] [User Authenticator #2/INFO]: UUID of player Pinont_ is 1ef0ba4a-36e1-42ee-820e-15946cc1dac9
+[18:40:20] [Server thread/INFO]: Pinont_ joined the game
+[18:40:20] [Server thread/INFO]: Pinont_[/171.100.76.72:65472] logged in with entity id 520 at ([world]66.34449933347129, 65.23109540810366, 414.2274770985585)
+[18:40:29] [Server thread/INFO]: Pinont_ issued server command: /reload confirm
+[18:40:29] [Server thread/INFO]: Pinont_: Please note that this command is not supported and may cause issues when using some plugins.
+[18:40:29] [Server thread/INFO]: Pinont_: If you encounter any issues please use the /stop command to restart your server.
+[18:40:29] [Server thread/INFO]: Using 4 threads for Netty based IO
+[18:40:29] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[18:40:29] [Server thread/INFO]: [AdvancedServerList] Disabling AdvancedServerList v3.0.0
+[18:40:29] [Server thread/INFO]: [AdvancedServerList] Saving playercache.json file...
+[18:40:29] [Server thread/INFO]: [AdvancedServerList] No players in cache to save. Skipping...
+[18:40:29] [Server thread/INFO]: [AdvancedServerList] Disabling Update Checker...
+[18:40:29] [Server thread/INFO]: [AdvancedServerList] AdvancedServerList disabled!
+[18:40:29] [Server thread/INFO]: [DriveBackupV2] Disabling DriveBackupV2 v1.6.0
+[18:40:29] [Server thread/INFO]: ChasingClub » Stopping plugin!
+[18:40:29] [Server thread/INFO]: [Armored] Disabling Armored v1.0-SNAPSHOT
+[18:40:29] [Server thread/INFO]: Armored plugin is disabled
+[18:40:29] [Server thread/INFO]: [FastAsyncWorldEdit] Disabling FastAsyncWorldEdit v2.6.0-SNAPSHOT-401;5cd9616
+[18:40:29] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[18:40:29] [Server thread/INFO]: Loaded 7 recipes
+[18:40:29] [Server thread/INFO]: [AdvancedServerList] Loading Libraries for plugin...
+[18:40:29] [Server thread/INFO]: [AdvancedServerList] Loading com.squareup.okhttp3:okhttp:4.10.0 from repo.papermc.io...
+[18:40:29] [Server thread/INFO]: [AdvancedServerList] Loading libraries complete!
+[18:40:29] [Server thread/WARN]: [PluginInitializerManager] ======== WARNING ========
+[18:40:29] [Server thread/WARN]: [PluginInitializerManager] You are reloading while having Paper plugins installed on your server.
+[18:40:29] [Server thread/WARN]: [PluginInitializerManager] Paper plugins do NOT support being reloaded. This will cause some unexpected issues.
+[18:40:29] [Server thread/WARN]: [PluginInitializerManager] =========================
+[18:40:29] [Server thread/INFO]: [FastAsyncWorldEdit] Loading server plugin FastAsyncWorldEdit v2.6.0-SNAPSHOT-401;5cd9616
+[18:40:29] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@48c6722f]
+[18:40:29] [Server thread/INFO]: [Armored] Loading server plugin Armored v1.0-SNAPSHOT
+[18:40:29] [Server thread/INFO]: [DriveBackupV2] Loading server plugin DriveBackupV2 v1.6.0
+[18:40:29] [Server thread/INFO]: [AdvancedServerList] Loading server plugin AdvancedServerList v3.0.0
+[18:40:29] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:40:29] [Server thread/INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v2.6.0-SNAPSHOT-401;5cd9616
+[18:40:29] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] LZ4 Compression Binding loaded successfully
+[18:40:30] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] ZSTD Compression Binding loaded successfully
+[18:40:30] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[18:40:30] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[18:40:30] [Server thread/WARN]: Server reload detected. This may cause various issues with FastAsyncWorldEdit and dependent plugins. Reloading the server is not advised.
+[18:40:30] [Server thread/WARN]: For more information why reloading is bad, see https://madelinemiller.dev/blog/problem-with-reload/
+[18:40:30] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.fawe.v1_19_R3.PaperweightFaweAdapter as the Bukkit adapter
+[18:40:31] [Server thread/INFO]: [Armored] Enabling Armored v1.0-SNAPSHOT
+[18:40:31] [Server thread/INFO]: Armored plugin is starting
+[18:40:31] [Server thread/INFO]: Armored connecting to database..
+[18:40:31] [Server thread/INFO]: Armored connected to database!
+[18:40:31] [Server thread/INFO]: Armored plugin has been started
+[18:40:31] [Server thread/INFO]: [DriveBackupV2] Enabling DriveBackupV2 v1.6.0
+[18:40:31] [Server thread/INFO]: ChasingClub » Config loaded!
+[18:40:31] [Server thread/INFO]: ChasingClub » Scheduling a backup to run at 12:00 PM every Monday, Tuesday, Friday, Thursday and Wednesday
+[18:40:31] [Server thread/INFO]: ChasingClub » Scheduling a backup to run at 10:00 PM every Saturday and Sunday
+[18:40:31] [Server thread/INFO]: ChasingClub » Metrics started
+[18:40:31] [Server thread/INFO]: [AdvancedServerList] Enabling AdvancedServerList v3.0.0
+[18:40:31] [Server thread/INFO]: [AdvancedServerList]            _____ _
+[18:40:31] [Server thread/INFO]: [AdvancedServerList]     /\    / ____| |
+[18:40:31] [Server thread/INFO]: [AdvancedServerList]    /  \  | (___ | |
+[18:40:31] [Server thread/INFO]: [AdvancedServerList]   / /\ \  \___ \| |
+[18:40:31] [Server thread/INFO]: [AdvancedServerList]  / ____ \ ____) | |____
+[18:40:31] [Server thread/INFO]: [AdvancedServerList] /_/    \_\_____/|______|
+[18:40:31] [Server thread/INFO]: [AdvancedServerList] 
+[18:40:31] [Server thread/INFO]: [AdvancedServerList] Starting AdvancedServerList v3.0.0...
+[18:40:31] [Server thread/INFO]: [AdvancedServerList] Platform: Paper git-Paper-507 (MC: 1.19.4)
+[18:40:31] [Server thread/INFO]: [AdvancedServerList] Loading config.yml...
+[18:40:31] [Server thread/INFO]: [AdvancedServerList] Successfully loaded config.yml!
+[18:40:31] [Server thread/INFO]: [AdvancedServerList] Loading profiles...
+[18:40:31] [Server thread/INFO]: [AdvancedServerList] Loaded default.yml
+[18:40:31] [Server thread/INFO]: [AdvancedServerList] Successfully loaded 1 profiles!
+[18:40:31] [Server thread/INFO]: [AdvancedServerList] Loading Commands...
+[18:40:31] [Server thread/INFO]: [AdvancedServerList] Registered /advancedserverlist:advancedserverlist
+[18:40:31] [Server thread/INFO]: [AdvancedServerList] Commands loaded!
+[18:40:31] [Server thread/INFO]: [AdvancedServerList] Loading events...
+[18:40:31] [Server thread/INFO]: [AdvancedServerList] Events loaded!
+[18:40:31] [Server thread/INFO]: [AdvancedServerList] Loading playercache.json...
+[18:40:31] [Server thread/INFO]: [AdvancedServerList] No playercache.json file present. Skipping...
+[18:40:31] [Server thread/INFO]: [AdvancedServerList] Loading bStats metrics. Disable it in the global config under /plugins/bstats/
+[18:40:31] [Server thread/INFO]: [AdvancedServerList] Metrics loaded!
+[18:40:31] [Server thread/INFO]: [AdvancedServerList] AdvancedServerList is ready!
+[18:40:31] [AdvancedServerList Update-Thread/INFO]: [AdvancedServerList] Checking for a new update...
+[18:40:31] [Server thread/INFO]: Pinont_: Reload complete.
+[18:40:31] [Server thread/INFO]: Timings Reset
+[18:40:31] [Craft Scheduler Thread - 5 - DriveBackupV2/INFO]: ChasingClub » Checking for updates...
+[18:40:31] [Craft Scheduler Thread - 5 - DriveBackupV2/INFO]: ChasingClub » Sending request https://api.curseforge.com/servermods/files?projectids=383461
+[18:40:31] [Paper Async Command Builder Thread Pool - 2/WARN]: java.nio.channels.OverlappingFileLockException
+[18:40:31] [Paper Async Command Builder Thread Pool - 2/WARN]: 	at java.base/sun.nio.ch.FileLockTable.checkList(FileLockTable.java:229)
+[18:40:31] [Paper Async Command Builder Thread Pool - 2/WARN]: 	at java.base/sun.nio.ch.FileLockTable.add(FileLockTable.java:123)
+[18:40:31] [Paper Async Command Builder Thread Pool - 2/WARN]: 	at java.base/sun.nio.ch.FileChannelImpl.lock(FileChannelImpl.java:1276)
+[18:40:31] [Paper Async Command Builder Thread Pool - 2/WARN]: 	at java.base/java.nio.channels.FileChannel.lock(FileChannel.java:1089)
+[18:40:31] [Paper Async Command Builder Thread Pool - 2/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.fastasyncworldedit.core.extent.clipboard.DiskOptimizedClipboard.init(DiskOptimizedClipboard.java:326)
+[18:40:31] [Paper Async Command Builder Thread Pool - 2/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.fastasyncworldedit.core.extent.clipboard.DiskOptimizedClipboard.<init>(DiskOptimizedClipboard.java:180)
+[18:40:31] [Paper Async Command Builder Thread Pool - 2/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.fastasyncworldedit.core.extent.clipboard.DiskOptimizedClipboard.<init>(DiskOptimizedClipboard.java:160)
+[18:40:31] [Paper Async Command Builder Thread Pool - 2/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.fastasyncworldedit.core.extent.clipboard.DiskOptimizedClipboard.loadFromFile(DiskOptimizedClipboard.java:241)
+[18:40:31] [Paper Async Command Builder Thread Pool - 2/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.entity.Player.loadClipboardFromDisk(Player.java:473)
+[18:40:31] [Paper Async Command Builder Thread Pool - 2/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.bukkit.BukkitPlayer.<init>(BukkitPlayer.java:112)
+[18:40:31] [Paper Async Command Builder Thread Pool - 2/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.bukkit.WorldEditPlugin.wrapPlayer(WorldEditPlugin.java:562)
+[18:40:31] [Paper Async Command Builder Thread Pool - 2/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.bukkit.WorldEditPlugin.wrapCommandSender(WorldEditPlugin.java:592)
+[18:40:31] [Paper Async Command Builder Thread Pool - 2/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.bukkit.BukkitCommandInspector.lambda$testPermission$0(BukkitCommandInspector.java:80)
+[18:40:31] [Paper Async Command Builder Thread Pool - 2/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//org.enginehub.piston.inject.MapBackedValueStore.lambda$injectedValue$0(MapBackedValueStore.java:56)
+[18:40:31] [Paper Async Command Builder Thread Pool - 2/WARN]: 	at java.base/java.util.Optional.flatMap(Optional.java:289)
+[18:40:31] [Paper Async Command Builder Thread Pool - 2/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//org.enginehub.piston.inject.MapBackedValueStore.injectedValue(MapBackedValueStore.java:56)
+[18:40:31] [Paper Async Command Builder Thread Pool - 2/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//org.enginehub.piston.inject.InjectedValueAccess.injectedValue(InjectedValueAccess.java:44)
+[18:40:31] [Paper Async Command Builder Thread Pool - 2/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.command.util.PermissionCondition.satisfied(PermissionCondition.java:54)
+[18:40:31] [Paper Async Command Builder Thread Pool - 2/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.bukkit.BukkitCommandInspector.testPermission(BukkitCommandInspector.java:81)
+[18:40:31] [Paper Async Command Builder Thread Pool - 2/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.bukkit.util.DynamicPluginCommand.testPermissionSilent(DynamicPluginCommand.java:107)
+[18:40:31] [Paper Async Command Builder Thread Pool - 2/WARN]: 	at org.bukkit.craftbukkit.v1_19_R3.command.BukkitCommandWrapper.test(BukkitCommandWrapper.java:56)
+[18:40:31] [Paper Async Command Builder Thread Pool - 2/WARN]: 	at org.bukkit.craftbukkit.v1_19_R3.command.BukkitCommandWrapper.test(BukkitCommandWrapper.java:23)
+[18:40:31] [Paper Async Command Builder Thread Pool - 2/WARN]: 	at com.mojang.brigadier.tree.CommandNode.canUse(CommandNode.java:79)
+[18:40:31] [Paper Async Command Builder Thread Pool - 2/WARN]: 	at net.minecraft.commands.CommandDispatcher.a(CommandDispatcher.java:483)
+[18:40:31] [Paper Async Command Builder Thread Pool - 2/WARN]: 	at net.minecraft.commands.CommandDispatcher.sendAsync(CommandDispatcher.java:441)
+[18:40:31] [Paper Async Command Builder Thread Pool - 2/WARN]: 	at net.minecraft.commands.CommandDispatcher.lambda$sendCommands$5(CommandDispatcher.java:414)
+[18:40:31] [Paper Async Command Builder Thread Pool - 2/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[18:40:31] [Paper Async Command Builder Thread Pool - 2/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[18:40:31] [Paper Async Command Builder Thread Pool - 2/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[18:40:31] [Craft Scheduler Thread - 5 - DriveBackupV2/INFO]: ChasingClub » Received response for https://api.curseforge.com/servermods/files?projectids=383461 in 158.4ms
+[18:40:31] [Craft Scheduler Thread - 5 - DriveBackupV2/INFO]: ChasingClub » Req: None
+[18:40:31] [Craft Scheduler Thread - 5 - DriveBackupV2/INFO]: ChasingClub » Resp: [{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2957\/547\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2957547","gameVersion":"1.15","md5":"bd367bb25228ae095a621d736b429a42","name":"DriveBackupV2-1.0.0","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2959\/467\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2959467","gameVersion":"1.15","md5":"a2ddc47ba8d4c901a33900b1921aff1d","name":"DriveBackupV2-1.0.1","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2959\/534\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2959534","gameVersion":"1.15","md5":"e46ec216742ec49bf45ef370286db4d8","name":"DriveBackupV2-1.0.2","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2965\/924\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2965924","gameVersion":"1.15","md5":"61ac4efbbdb6c1945ee76dc1ae03b597","name":" DriveBackupV2-1.1.0","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2972\/470\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2972470","gameVersion":"1.15","md5":"96ff31341ecc55ff1e524b8d333bafb1","name":"DriveBackupV2-1.1.1","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2975\/734\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2975734","gameVersion":"1.15","md5":"6cc89859756fadc66827f3474d8bbdd4","name":" DriveBackupV2-1.2.0","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2982\/410\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2982410","gameVersion":"1.15","md5":"dc0800ccf2c4fbb7154c6fa500a57ed3","name":"DriveBackupV2-1.2.1","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2991\/768\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2991768","gameVersion":"1.16","md5":"fe230aafcf648d487c1b12f8809a14c4","name":"DriveBackupV2-1.2.3","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3012\/643\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3012643","gameVersion":"1.16","md5":"d83a38b3b33a9954716f4b399e756457","name":" DriveBackupV2-1.3.0","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3015\/900\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3015900","gameVersion":"1.16","md5":"ab78da842ba62dc3a3b5bdfe1b44b87e","name":"DriveBackupV2-1.3.1","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3024\/419\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3024419","gameVersion":"1.16","md5":"8eded9dadaac221622b39dfd0baaa6e9","name":"DriveBackupV2-1.3.2","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3039\/78\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3039078","gameVersion":"1.16","md5":"62a0b0aceafe0ec5cf7101c3926f21b1","name":"DriveBackupV2-1.3.3","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3047\/843\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3047843","gameVersion":"1.16","md5":"6bc519eb5372b15659564d37f4f71ad8","name":"DriveBackupV2-1.3.4","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3049\/311\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3049311","gameVersion":"1.16","md5":"2c09f6c637cd73900f63f59ec47f4f7a","name":"DriveBackupV2-1.3.5","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3086\/966\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3086966","gameVersion":"1.16","md5":"e3481ccdc8461d65923b26a5bf01506c","name":"DriveBackupV2-1.3.6","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3093\/903\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3093903","gameVersion":"1.16","md5":"bfebaeda0f00c06e78d738a78d62c882","name":"DriveBackupV2-1.3.7","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3203\/383\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3203383","gameVersion":"1.16","md5":"91c8b5f0f8a7fd8577a62b32490cc662","name":"DriveBackupV2-1.3.8","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3242\/690\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3242690","gameVersion":"1.16","md5":"f33b2a234c778446e4b70b64c6df983f","name":"DriveBackupV2-1.3.9","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3314\/633\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3314633","gameVersion":"1.16","md5":"f65a490a66d45368ac63f391e4a44fdd","name":" DriveBackupV2-1.4.0","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1623110400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3440\/945\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3440945","gameVersion":"1.17","md5":"a3d5965eaf0b77e470548d837491333a","name":"DriveBackupV2-1.5.2","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1623110400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3466\/443\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3466443","gameVersion":"1.17","md5":"0e222e2931dd38c6e5a13f2a4a187971","name":" DriveBackupV2-1.5.3","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1640476800000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3520\/141\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3520141","gameVersion":"1.18.1","md5":"bb13e8e2cf76d207d819727fbc3b8bfd","name":"DriveBackupV2-1.5.4","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1656374400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3680\/816\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3680816","gameVersion":"1.19.1","md5":"93c8914cb90c20580313ddcea802de5e","name":"DriveBackupV2-1.6.0","projectId":383461,"releaseType":"release"}]
+[18:40:32] [ForkJoinPool.commonPool-worker-2/INFO]: [AdvancedServerList] No new update found. You're running the latest version!
+[18:40:52] [Server thread/INFO]: Pinont_ issued server command: /b
+[18:40:54] [Server thread/INFO]: Pinont_ issued server command: /b
+[18:40:58] [Server thread/INFO]: Pinont_ issued server command: /deop Pinont_
+[18:40:58] [Server thread/INFO]: [Pinont_: Made Pinont_ no longer a server operator]
+[18:42:20] [Server thread/INFO]: Made Pinont_ a server operator
+[18:42:33] [Server thread/INFO]: Pinont_ issued server command: /b
+[18:48:03] [Server thread/INFO]: Pinont_ issued server command: /reload confirm
+[18:48:03] [Server thread/INFO]: Pinont_: Please note that this command is not supported and may cause issues when using some plugins.
+[18:48:03] [Server thread/INFO]: Pinont_: If you encounter any issues please use the /stop command to restart your server.
+[18:48:03] [Server thread/INFO]: Using 4 threads for Netty based IO
+[18:48:03] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[18:48:03] [Server thread/INFO]: [AdvancedServerList] Disabling AdvancedServerList v3.0.0
+[18:48:03] [Server thread/INFO]: [AdvancedServerList] Saving playercache.json file...
+[18:48:03] [Server thread/INFO]: [AdvancedServerList] No players in cache to save. Skipping...
+[18:48:03] [Server thread/INFO]: [AdvancedServerList] Disabling Update Checker...
+[18:48:03] [Server thread/INFO]: [AdvancedServerList] AdvancedServerList disabled!
+[18:48:03] [Server thread/INFO]: [DriveBackupV2] Disabling DriveBackupV2 v1.6.0
+[18:48:03] [Server thread/INFO]: ChasingClub » Stopping plugin!
+[18:48:03] [Server thread/INFO]: [Armored] Disabling Armored v1.0-SNAPSHOT
+[18:48:03] [Server thread/INFO]: Armored plugin is disabled
+[18:48:03] [Server thread/INFO]: [FastAsyncWorldEdit] Disabling FastAsyncWorldEdit v2.6.0-SNAPSHOT-401;5cd9616
+[18:48:03] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[18:48:03] [Server thread/INFO]: Loaded 7 recipes
+[18:48:03] [Server thread/INFO]: [AdvancedServerList] Loading Libraries for plugin...
+[18:48:03] [Server thread/INFO]: [AdvancedServerList] Loading com.squareup.okhttp3:okhttp:4.10.0 from repo.papermc.io...
+[18:48:03] [Server thread/INFO]: [AdvancedServerList] Loading libraries complete!
+[18:48:03] [Server thread/WARN]: [PluginInitializerManager] ======== WARNING ========
+[18:48:03] [Server thread/WARN]: [PluginInitializerManager] You are reloading while having Paper plugins installed on your server.
+[18:48:03] [Server thread/WARN]: [PluginInitializerManager] Paper plugins do NOT support being reloaded. This will cause some unexpected issues.
+[18:48:03] [Server thread/WARN]: [PluginInitializerManager] =========================
+[18:48:04] [Server thread/INFO]: [FastAsyncWorldEdit] Loading server plugin FastAsyncWorldEdit v2.6.0-SNAPSHOT-401;5cd9616
+[18:48:04] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@637c7c57]
+[18:48:04] [Server thread/INFO]: [Armored] Loading server plugin Armored v1.0-SNAPSHOT
+[18:48:04] [Server thread/INFO]: [DriveBackupV2] Loading server plugin DriveBackupV2 v1.6.0
+[18:48:04] [Server thread/INFO]: [AdvancedServerList] Loading server plugin AdvancedServerList v3.0.0
+[18:48:04] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:48:04] [Server thread/INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v2.6.0-SNAPSHOT-401;5cd9616
+[18:48:04] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] LZ4 Compression Binding loaded successfully
+[18:48:04] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] ZSTD Compression Binding loaded successfully
+[18:48:04] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[18:48:04] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[18:48:04] [Server thread/WARN]: Server reload detected. This may cause various issues with FastAsyncWorldEdit and dependent plugins. Reloading the server is not advised.
+[18:48:04] [Server thread/WARN]: For more information why reloading is bad, see https://madelinemiller.dev/blog/problem-with-reload/
+[18:48:04] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.fawe.v1_19_R3.PaperweightFaweAdapter as the Bukkit adapter
+[18:48:05] [Server thread/INFO]: [Armored] Enabling Armored v1.0-SNAPSHOT
+[18:48:05] [Server thread/INFO]: Armored plugin is starting
+[18:48:05] [Server thread/INFO]: Armored connecting to database..
+[18:48:05] [Server thread/INFO]: Armored connected to database!
+[18:48:05] [Server thread/INFO]: Armored plugin has been started
+[18:48:05] [Server thread/INFO]: [DriveBackupV2] Enabling DriveBackupV2 v1.6.0
+[18:48:06] [Server thread/INFO]: ChasingClub » Config loaded!
+[18:48:06] [Server thread/INFO]: ChasingClub » Scheduling a backup to run at 12:00 PM every Monday, Tuesday, Friday, Thursday and Wednesday
+[18:48:06] [Server thread/INFO]: ChasingClub » Scheduling a backup to run at 10:00 PM every Saturday and Sunday
+[18:48:06] [Server thread/INFO]: ChasingClub » Metrics started
+[18:48:06] [Server thread/INFO]: [AdvancedServerList] Enabling AdvancedServerList v3.0.0
+[18:48:06] [Server thread/INFO]: [AdvancedServerList]            _____ _
+[18:48:06] [Server thread/INFO]: [AdvancedServerList]     /\    / ____| |
+[18:48:06] [Server thread/INFO]: [AdvancedServerList]    /  \  | (___ | |
+[18:48:06] [Server thread/INFO]: [AdvancedServerList]   / /\ \  \___ \| |
+[18:48:06] [Server thread/INFO]: [AdvancedServerList]  / ____ \ ____) | |____
+[18:48:06] [Server thread/INFO]: [AdvancedServerList] /_/    \_\_____/|______|
+[18:48:06] [Server thread/INFO]: [AdvancedServerList] 
+[18:48:06] [Server thread/INFO]: [AdvancedServerList] Starting AdvancedServerList v3.0.0...
+[18:48:06] [Server thread/INFO]: [AdvancedServerList] Platform: Paper git-Paper-507 (MC: 1.19.4)
+[18:48:06] [Server thread/INFO]: [AdvancedServerList] Loading config.yml...
+[18:48:06] [Server thread/INFO]: [AdvancedServerList] Successfully loaded config.yml!
+[18:48:06] [Server thread/INFO]: [AdvancedServerList] Loading profiles...
+[18:48:06] [Server thread/INFO]: [AdvancedServerList] Loaded default.yml
+[18:48:06] [Server thread/INFO]: [AdvancedServerList] Successfully loaded 1 profiles!
+[18:48:06] [Server thread/INFO]: [AdvancedServerList] Loading Commands...
+[18:48:06] [Server thread/INFO]: [AdvancedServerList] Registered /advancedserverlist:advancedserverlist
+[18:48:06] [Server thread/INFO]: [AdvancedServerList] Commands loaded!
+[18:48:06] [Server thread/INFO]: [AdvancedServerList] Loading events...
+[18:48:06] [Server thread/INFO]: [AdvancedServerList] Events loaded!
+[18:48:06] [Server thread/INFO]: [AdvancedServerList] Loading playercache.json...
+[18:48:06] [Server thread/INFO]: [AdvancedServerList] No playercache.json file present. Skipping...
+[18:48:06] [Server thread/INFO]: [AdvancedServerList] Loading bStats metrics. Disable it in the global config under /plugins/bstats/
+[18:48:06] [Server thread/INFO]: [AdvancedServerList] Metrics loaded!
+[18:48:06] [Server thread/INFO]: [AdvancedServerList] AdvancedServerList is ready!
+[18:48:06] [AdvancedServerList Update-Thread/INFO]: [AdvancedServerList] Checking for a new update...
+[18:48:06] [Server thread/INFO]: Pinont_: Reload complete.
+[18:48:06] [Server thread/INFO]: Timings Reset
+[18:48:06] [Craft Scheduler Thread - 7 - DriveBackupV2/INFO]: ChasingClub » Checking for updates...
+[18:48:06] [Server thread/WARN]: Pinont_ moved too quickly! -41.13677166536315,0.10096113632783954,-2.8108042341335704
+[18:48:06] [Craft Scheduler Thread - 7 - DriveBackupV2/INFO]: ChasingClub » Sending request https://api.curseforge.com/servermods/files?projectids=383461
+[18:48:06] [Paper Async Command Builder Thread Pool - 4/WARN]: java.nio.channels.OverlappingFileLockException
+[18:48:06] [Paper Async Command Builder Thread Pool - 4/WARN]: 	at java.base/sun.nio.ch.FileLockTable.checkList(FileLockTable.java:229)
+[18:48:06] [Paper Async Command Builder Thread Pool - 4/WARN]: 	at java.base/sun.nio.ch.FileLockTable.add(FileLockTable.java:123)
+[18:48:06] [Paper Async Command Builder Thread Pool - 4/WARN]: 	at java.base/sun.nio.ch.FileChannelImpl.lock(FileChannelImpl.java:1276)
+[18:48:06] [Paper Async Command Builder Thread Pool - 4/WARN]: 	at java.base/java.nio.channels.FileChannel.lock(FileChannel.java:1089)
+[18:48:06] [Paper Async Command Builder Thread Pool - 4/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.fastasyncworldedit.core.extent.clipboard.DiskOptimizedClipboard.init(DiskOptimizedClipboard.java:326)
+[18:48:06] [Paper Async Command Builder Thread Pool - 4/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.fastasyncworldedit.core.extent.clipboard.DiskOptimizedClipboard.<init>(DiskOptimizedClipboard.java:180)
+[18:48:06] [Paper Async Command Builder Thread Pool - 4/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.fastasyncworldedit.core.extent.clipboard.DiskOptimizedClipboard.<init>(DiskOptimizedClipboard.java:160)
+[18:48:06] [Paper Async Command Builder Thread Pool - 4/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.fastasyncworldedit.core.extent.clipboard.DiskOptimizedClipboard.loadFromFile(DiskOptimizedClipboard.java:241)
+[18:48:06] [Paper Async Command Builder Thread Pool - 4/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.entity.Player.loadClipboardFromDisk(Player.java:473)
+[18:48:06] [Paper Async Command Builder Thread Pool - 4/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.bukkit.BukkitPlayer.<init>(BukkitPlayer.java:112)
+[18:48:06] [Paper Async Command Builder Thread Pool - 4/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.bukkit.WorldEditPlugin.wrapPlayer(WorldEditPlugin.java:562)
+[18:48:06] [Paper Async Command Builder Thread Pool - 4/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.bukkit.WorldEditPlugin.wrapCommandSender(WorldEditPlugin.java:592)
+[18:48:06] [Paper Async Command Builder Thread Pool - 4/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.bukkit.BukkitCommandInspector.lambda$testPermission$0(BukkitCommandInspector.java:80)
+[18:48:06] [Paper Async Command Builder Thread Pool - 4/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//org.enginehub.piston.inject.MapBackedValueStore.lambda$injectedValue$0(MapBackedValueStore.java:56)
+[18:48:06] [Paper Async Command Builder Thread Pool - 4/WARN]: 	at java.base/java.util.Optional.flatMap(Optional.java:289)
+[18:48:06] [Paper Async Command Builder Thread Pool - 4/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//org.enginehub.piston.inject.MapBackedValueStore.injectedValue(MapBackedValueStore.java:56)
+[18:48:06] [Paper Async Command Builder Thread Pool - 4/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//org.enginehub.piston.inject.InjectedValueAccess.injectedValue(InjectedValueAccess.java:44)
+[18:48:06] [Paper Async Command Builder Thread Pool - 4/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.command.util.PermissionCondition.satisfied(PermissionCondition.java:54)
+[18:48:06] [Paper Async Command Builder Thread Pool - 4/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.bukkit.BukkitCommandInspector.testPermission(BukkitCommandInspector.java:81)
+[18:48:06] [Paper Async Command Builder Thread Pool - 4/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.bukkit.util.DynamicPluginCommand.testPermissionSilent(DynamicPluginCommand.java:107)
+[18:48:06] [Paper Async Command Builder Thread Pool - 4/WARN]: 	at org.bukkit.craftbukkit.v1_19_R3.command.BukkitCommandWrapper.test(BukkitCommandWrapper.java:56)
+[18:48:06] [Paper Async Command Builder Thread Pool - 4/WARN]: 	at org.bukkit.craftbukkit.v1_19_R3.command.BukkitCommandWrapper.test(BukkitCommandWrapper.java:23)
+[18:48:06] [Paper Async Command Builder Thread Pool - 4/WARN]: 	at com.mojang.brigadier.tree.CommandNode.canUse(CommandNode.java:79)
+[18:48:06] [Paper Async Command Builder Thread Pool - 4/WARN]: 	at net.minecraft.commands.CommandDispatcher.a(CommandDispatcher.java:483)
+[18:48:06] [Paper Async Command Builder Thread Pool - 4/WARN]: 	at net.minecraft.commands.CommandDispatcher.sendAsync(CommandDispatcher.java:441)
+[18:48:06] [Paper Async Command Builder Thread Pool - 4/WARN]: 	at net.minecraft.commands.CommandDispatcher.lambda$sendCommands$5(CommandDispatcher.java:414)
+[18:48:06] [Paper Async Command Builder Thread Pool - 4/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[18:48:06] [Paper Async Command Builder Thread Pool - 4/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[18:48:06] [Paper Async Command Builder Thread Pool - 4/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[18:48:06] [Craft Scheduler Thread - 7 - DriveBackupV2/INFO]: ChasingClub » Received response for https://api.curseforge.com/servermods/files?projectids=383461 in 147.7ms
+[18:48:06] [Craft Scheduler Thread - 7 - DriveBackupV2/INFO]: ChasingClub » Req: None
+[18:48:06] [Craft Scheduler Thread - 7 - DriveBackupV2/INFO]: ChasingClub » Resp: [{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2957\/547\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2957547","gameVersion":"1.15","md5":"bd367bb25228ae095a621d736b429a42","name":"DriveBackupV2-1.0.0","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2959\/467\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2959467","gameVersion":"1.15","md5":"a2ddc47ba8d4c901a33900b1921aff1d","name":"DriveBackupV2-1.0.1","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2959\/534\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2959534","gameVersion":"1.15","md5":"e46ec216742ec49bf45ef370286db4d8","name":"DriveBackupV2-1.0.2","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2965\/924\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2965924","gameVersion":"1.15","md5":"61ac4efbbdb6c1945ee76dc1ae03b597","name":" DriveBackupV2-1.1.0","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2972\/470\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2972470","gameVersion":"1.15","md5":"96ff31341ecc55ff1e524b8d333bafb1","name":"DriveBackupV2-1.1.1","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2975\/734\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2975734","gameVersion":"1.15","md5":"6cc89859756fadc66827f3474d8bbdd4","name":" DriveBackupV2-1.2.0","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2982\/410\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2982410","gameVersion":"1.15","md5":"dc0800ccf2c4fbb7154c6fa500a57ed3","name":"DriveBackupV2-1.2.1","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2991\/768\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2991768","gameVersion":"1.16","md5":"fe230aafcf648d487c1b12f8809a14c4","name":"DriveBackupV2-1.2.3","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3012\/643\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3012643","gameVersion":"1.16","md5":"d83a38b3b33a9954716f4b399e756457","name":" DriveBackupV2-1.3.0","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3015\/900\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3015900","gameVersion":"1.16","md5":"ab78da842ba62dc3a3b5bdfe1b44b87e","name":"DriveBackupV2-1.3.1","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3024\/419\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3024419","gameVersion":"1.16","md5":"8eded9dadaac221622b39dfd0baaa6e9","name":"DriveBackupV2-1.3.2","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3039\/78\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3039078","gameVersion":"1.16","md5":"62a0b0aceafe0ec5cf7101c3926f21b1","name":"DriveBackupV2-1.3.3","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3047\/843\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3047843","gameVersion":"1.16","md5":"6bc519eb5372b15659564d37f4f71ad8","name":"DriveBackupV2-1.3.4","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3049\/311\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3049311","gameVersion":"1.16","md5":"2c09f6c637cd73900f63f59ec47f4f7a","name":"DriveBackupV2-1.3.5","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3086\/966\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3086966","gameVersion":"1.16","md5":"e3481ccdc8461d65923b26a5bf01506c","name":"DriveBackupV2-1.3.6","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3093\/903\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3093903","gameVersion":"1.16","md5":"bfebaeda0f00c06e78d738a78d62c882","name":"DriveBackupV2-1.3.7","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3203\/383\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3203383","gameVersion":"1.16","md5":"91c8b5f0f8a7fd8577a62b32490cc662","name":"DriveBackupV2-1.3.8","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3242\/690\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3242690","gameVersion":"1.16","md5":"f33b2a234c778446e4b70b64c6df983f","name":"DriveBackupV2-1.3.9","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3314\/633\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3314633","gameVersion":"1.16","md5":"f65a490a66d45368ac63f391e4a44fdd","name":" DriveBackupV2-1.4.0","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1623110400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3440\/945\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3440945","gameVersion":"1.17","md5":"a3d5965eaf0b77e470548d837491333a","name":"DriveBackupV2-1.5.2","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1623110400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3466\/443\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3466443","gameVersion":"1.17","md5":"0e222e2931dd38c6e5a13f2a4a187971","name":" DriveBackupV2-1.5.3","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1640476800000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3520\/141\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3520141","gameVersion":"1.18.1","md5":"bb13e8e2cf76d207d819727fbc3b8bfd","name":"DriveBackupV2-1.5.4","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1656374400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3680\/816\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3680816","gameVersion":"1.19.1","md5":"93c8914cb90c20580313ddcea802de5e","name":"DriveBackupV2-1.6.0","projectId":383461,"releaseType":"release"}]
+[18:48:06] [ForkJoinPool.commonPool-worker-3/INFO]: [AdvancedServerList] No new update found. You're running the latest version!
+[18:48:17] [Server thread/INFO]: Pinont_ issued server command: /b
+[18:48:20] [Server thread/INFO]: Pinont_ issued server command: /gamemode survival
+[18:48:20] [Server thread/INFO]: [Pinont_: Set own game mode to Survival Mode]
+[18:53:40] [Server thread/INFO]: Pinont_ issued server command: /reload confirm
+[18:53:40] [Server thread/INFO]: Pinont_: Please note that this command is not supported and may cause issues when using some plugins.
+[18:53:40] [Server thread/INFO]: Pinont_: If you encounter any issues please use the /stop command to restart your server.
+[18:53:40] [Server thread/INFO]: Using 4 threads for Netty based IO
+[18:53:40] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[18:53:40] [Server thread/INFO]: [AdvancedServerList] Disabling AdvancedServerList v3.0.0
+[18:53:40] [Server thread/INFO]: [AdvancedServerList] Saving playercache.json file...
+[18:53:40] [Server thread/INFO]: [AdvancedServerList] No players in cache to save. Skipping...
+[18:53:40] [Server thread/INFO]: [AdvancedServerList] Disabling Update Checker...
+[18:53:40] [Server thread/INFO]: [AdvancedServerList] AdvancedServerList disabled!
+[18:53:40] [Server thread/INFO]: [DriveBackupV2] Disabling DriveBackupV2 v1.6.0
+[18:53:40] [Server thread/INFO]: ChasingClub » Stopping plugin!
+[18:53:40] [Server thread/INFO]: [Armored] Disabling Armored v1.0-SNAPSHOT
+[18:53:40] [Server thread/INFO]: Armored plugin is disabled
+[18:53:40] [Server thread/INFO]: [FastAsyncWorldEdit] Disabling FastAsyncWorldEdit v2.6.0-SNAPSHOT-401;5cd9616
+[18:53:40] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[18:53:41] [Server thread/INFO]: Loaded 7 recipes
+[18:53:41] [Server thread/INFO]: [AdvancedServerList] Loading Libraries for plugin...
+[18:53:41] [Server thread/INFO]: [AdvancedServerList] Loading com.squareup.okhttp3:okhttp:4.10.0 from repo.papermc.io...
+[18:53:41] [Server thread/INFO]: [AdvancedServerList] Loading libraries complete!
+[18:53:41] [Server thread/WARN]: [PluginInitializerManager] ======== WARNING ========
+[18:53:41] [Server thread/WARN]: [PluginInitializerManager] You are reloading while having Paper plugins installed on your server.
+[18:53:41] [Server thread/WARN]: [PluginInitializerManager] Paper plugins do NOT support being reloaded. This will cause some unexpected issues.
+[18:53:41] [Server thread/WARN]: [PluginInitializerManager] =========================
+[18:53:41] [Server thread/INFO]: [FastAsyncWorldEdit] Loading server plugin FastAsyncWorldEdit v2.6.0-SNAPSHOT-401;5cd9616
+[18:53:41] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@1c4a96a4]
+[18:53:41] [Server thread/INFO]: [Armored] Loading server plugin Armored v1.0-SNAPSHOT
+[18:53:41] [Server thread/INFO]: [DriveBackupV2] Loading server plugin DriveBackupV2 v1.6.0
+[18:53:41] [Server thread/INFO]: [AdvancedServerList] Loading server plugin AdvancedServerList v3.0.0
+[18:53:41] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:53:41] [Server thread/INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v2.6.0-SNAPSHOT-401;5cd9616
+[18:53:41] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] LZ4 Compression Binding loaded successfully
+[18:53:41] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] ZSTD Compression Binding loaded successfully
+[18:53:41] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[18:53:41] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[18:53:41] [Server thread/WARN]: Server reload detected. This may cause various issues with FastAsyncWorldEdit and dependent plugins. Reloading the server is not advised.
+[18:53:41] [Server thread/WARN]: For more information why reloading is bad, see https://madelinemiller.dev/blog/problem-with-reload/
+[18:53:42] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.fawe.v1_19_R3.PaperweightFaweAdapter as the Bukkit adapter
+[18:53:43] [Server thread/INFO]: [Armored] Enabling Armored v1.0-SNAPSHOT
+[18:53:43] [Server thread/INFO]: Armored plugin is starting
+[18:53:43] [Server thread/INFO]: Armored connecting to database..
+[18:53:43] [Server thread/INFO]: Armored connected to database!
+[18:53:43] [Server thread/INFO]: Armored plugin has been started
+[18:53:43] [Server thread/INFO]: [DriveBackupV2] Enabling DriveBackupV2 v1.6.0
+[18:53:43] [Server thread/INFO]: ChasingClub » Config loaded!
+[18:53:43] [Server thread/INFO]: ChasingClub » Scheduling a backup to run at 12:00 PM every Monday, Tuesday, Friday, Thursday and Wednesday
+[18:53:43] [Server thread/INFO]: ChasingClub » Scheduling a backup to run at 10:00 PM every Saturday and Sunday
+[18:53:43] [Server thread/INFO]: ChasingClub » Metrics started
+[18:53:43] [Server thread/INFO]: [AdvancedServerList] Enabling AdvancedServerList v3.0.0
+[18:53:43] [Server thread/INFO]: [AdvancedServerList]            _____ _
+[18:53:43] [Server thread/INFO]: [AdvancedServerList]     /\    / ____| |
+[18:53:43] [Server thread/INFO]: [AdvancedServerList]    /  \  | (___ | |
+[18:53:43] [Server thread/INFO]: [AdvancedServerList]   / /\ \  \___ \| |
+[18:53:43] [Server thread/INFO]: [AdvancedServerList]  / ____ \ ____) | |____
+[18:53:43] [Server thread/INFO]: [AdvancedServerList] /_/    \_\_____/|______|
+[18:53:43] [Server thread/INFO]: [AdvancedServerList] 
+[18:53:43] [Server thread/INFO]: [AdvancedServerList] Starting AdvancedServerList v3.0.0...
+[18:53:43] [Server thread/INFO]: [AdvancedServerList] Platform: Paper git-Paper-507 (MC: 1.19.4)
+[18:53:43] [Server thread/INFO]: [AdvancedServerList] Loading config.yml...
+[18:53:43] [Server thread/INFO]: [AdvancedServerList] Successfully loaded config.yml!
+[18:53:43] [Server thread/INFO]: [AdvancedServerList] Loading profiles...
+[18:53:43] [Server thread/INFO]: [AdvancedServerList] Loaded default.yml
+[18:53:43] [Server thread/INFO]: [AdvancedServerList] Successfully loaded 1 profiles!
+[18:53:43] [Server thread/INFO]: [AdvancedServerList] Loading Commands...
+[18:53:43] [Server thread/INFO]: [AdvancedServerList] Registered /advancedserverlist:advancedserverlist
+[18:53:43] [Server thread/INFO]: [AdvancedServerList] Commands loaded!
+[18:53:43] [Server thread/INFO]: [AdvancedServerList] Loading events...
+[18:53:43] [Server thread/INFO]: [AdvancedServerList] Events loaded!
+[18:53:43] [Server thread/INFO]: [AdvancedServerList] Loading playercache.json...
+[18:53:43] [Server thread/INFO]: [AdvancedServerList] No playercache.json file present. Skipping...
+[18:53:43] [Server thread/INFO]: [AdvancedServerList] Loading bStats metrics. Disable it in the global config under /plugins/bstats/
+[18:53:43] [Server thread/INFO]: [AdvancedServerList] Metrics loaded!
+[18:53:43] [Server thread/INFO]: [AdvancedServerList] AdvancedServerList is ready!
+[18:53:43] [AdvancedServerList Update-Thread/INFO]: [AdvancedServerList] Checking for a new update...
+[18:53:43] [Server thread/INFO]: Pinont_: Reload complete.
+[18:53:43] [Server thread/INFO]: Timings Reset
+[18:53:43] [Craft Scheduler Thread - 9 - DriveBackupV2/INFO]: ChasingClub » Checking for updates...
+[18:53:43] [Craft Scheduler Thread - 9 - DriveBackupV2/INFO]: ChasingClub » Sending request https://api.curseforge.com/servermods/files?projectids=383461
+[18:53:43] [Paper Async Command Builder Thread Pool - 5/WARN]: java.nio.channels.OverlappingFileLockException
+[18:53:43] [Paper Async Command Builder Thread Pool - 5/WARN]: 	at java.base/sun.nio.ch.FileLockTable.checkList(FileLockTable.java:229)
+[18:53:43] [Paper Async Command Builder Thread Pool - 5/WARN]: 	at java.base/sun.nio.ch.FileLockTable.add(FileLockTable.java:123)
+[18:53:43] [Paper Async Command Builder Thread Pool - 5/WARN]: 	at java.base/sun.nio.ch.FileChannelImpl.lock(FileChannelImpl.java:1276)
+[18:53:43] [Paper Async Command Builder Thread Pool - 5/WARN]: 	at java.base/java.nio.channels.FileChannel.lock(FileChannel.java:1089)
+[18:53:43] [Paper Async Command Builder Thread Pool - 5/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.fastasyncworldedit.core.extent.clipboard.DiskOptimizedClipboard.init(DiskOptimizedClipboard.java:326)
+[18:53:43] [Paper Async Command Builder Thread Pool - 5/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.fastasyncworldedit.core.extent.clipboard.DiskOptimizedClipboard.<init>(DiskOptimizedClipboard.java:180)
+[18:53:43] [Paper Async Command Builder Thread Pool - 5/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.fastasyncworldedit.core.extent.clipboard.DiskOptimizedClipboard.<init>(DiskOptimizedClipboard.java:160)
+[18:53:43] [Paper Async Command Builder Thread Pool - 5/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.fastasyncworldedit.core.extent.clipboard.DiskOptimizedClipboard.loadFromFile(DiskOptimizedClipboard.java:241)
+[18:53:43] [Paper Async Command Builder Thread Pool - 5/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.entity.Player.loadClipboardFromDisk(Player.java:473)
+[18:53:43] [Paper Async Command Builder Thread Pool - 5/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.bukkit.BukkitPlayer.<init>(BukkitPlayer.java:112)
+[18:53:43] [Paper Async Command Builder Thread Pool - 5/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.bukkit.WorldEditPlugin.wrapPlayer(WorldEditPlugin.java:562)
+[18:53:43] [Paper Async Command Builder Thread Pool - 5/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.bukkit.WorldEditPlugin.wrapCommandSender(WorldEditPlugin.java:592)
+[18:53:43] [Paper Async Command Builder Thread Pool - 5/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.bukkit.BukkitCommandInspector.lambda$testPermission$0(BukkitCommandInspector.java:80)
+[18:53:43] [Paper Async Command Builder Thread Pool - 5/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//org.enginehub.piston.inject.MapBackedValueStore.lambda$injectedValue$0(MapBackedValueStore.java:56)
+[18:53:43] [Paper Async Command Builder Thread Pool - 5/WARN]: 	at java.base/java.util.Optional.flatMap(Optional.java:289)
+[18:53:43] [Paper Async Command Builder Thread Pool - 5/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//org.enginehub.piston.inject.MapBackedValueStore.injectedValue(MapBackedValueStore.java:56)
+[18:53:43] [Paper Async Command Builder Thread Pool - 5/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//org.enginehub.piston.inject.InjectedValueAccess.injectedValue(InjectedValueAccess.java:44)
+[18:53:43] [Paper Async Command Builder Thread Pool - 5/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.command.util.PermissionCondition.satisfied(PermissionCondition.java:54)
+[18:53:43] [Paper Async Command Builder Thread Pool - 5/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.bukkit.BukkitCommandInspector.testPermission(BukkitCommandInspector.java:81)
+[18:53:43] [Paper Async Command Builder Thread Pool - 5/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.bukkit.util.DynamicPluginCommand.testPermissionSilent(DynamicPluginCommand.java:107)
+[18:53:43] [Paper Async Command Builder Thread Pool - 5/WARN]: 	at org.bukkit.craftbukkit.v1_19_R3.command.BukkitCommandWrapper.test(BukkitCommandWrapper.java:56)
+[18:53:43] [Paper Async Command Builder Thread Pool - 5/WARN]: 	at org.bukkit.craftbukkit.v1_19_R3.command.BukkitCommandWrapper.test(BukkitCommandWrapper.java:23)
+[18:53:43] [Paper Async Command Builder Thread Pool - 5/WARN]: 	at com.mojang.brigadier.tree.CommandNode.canUse(CommandNode.java:79)
+[18:53:43] [Paper Async Command Builder Thread Pool - 5/WARN]: 	at net.minecraft.commands.CommandDispatcher.a(CommandDispatcher.java:483)
+[18:53:43] [Paper Async Command Builder Thread Pool - 5/WARN]: 	at net.minecraft.commands.CommandDispatcher.sendAsync(CommandDispatcher.java:441)
+[18:53:43] [Paper Async Command Builder Thread Pool - 5/WARN]: 	at net.minecraft.commands.CommandDispatcher.lambda$sendCommands$5(CommandDispatcher.java:414)
+[18:53:43] [Paper Async Command Builder Thread Pool - 5/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[18:53:43] [Paper Async Command Builder Thread Pool - 5/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[18:53:43] [Paper Async Command Builder Thread Pool - 5/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[18:53:43] [Craft Scheduler Thread - 9 - DriveBackupV2/INFO]: ChasingClub » Received response for https://api.curseforge.com/servermods/files?projectids=383461 in 119.4ms
+[18:53:43] [Craft Scheduler Thread - 9 - DriveBackupV2/INFO]: ChasingClub » Req: None
+[18:53:43] [Craft Scheduler Thread - 9 - DriveBackupV2/INFO]: ChasingClub » Resp: [{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2957\/547\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2957547","gameVersion":"1.15","md5":"bd367bb25228ae095a621d736b429a42","name":"DriveBackupV2-1.0.0","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2959\/467\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2959467","gameVersion":"1.15","md5":"a2ddc47ba8d4c901a33900b1921aff1d","name":"DriveBackupV2-1.0.1","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2959\/534\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2959534","gameVersion":"1.15","md5":"e46ec216742ec49bf45ef370286db4d8","name":"DriveBackupV2-1.0.2","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2965\/924\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2965924","gameVersion":"1.15","md5":"61ac4efbbdb6c1945ee76dc1ae03b597","name":" DriveBackupV2-1.1.0","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2972\/470\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2972470","gameVersion":"1.15","md5":"96ff31341ecc55ff1e524b8d333bafb1","name":"DriveBackupV2-1.1.1","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2975\/734\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2975734","gameVersion":"1.15","md5":"6cc89859756fadc66827f3474d8bbdd4","name":" DriveBackupV2-1.2.0","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2982\/410\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2982410","gameVersion":"1.15","md5":"dc0800ccf2c4fbb7154c6fa500a57ed3","name":"DriveBackupV2-1.2.1","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2991\/768\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2991768","gameVersion":"1.16","md5":"fe230aafcf648d487c1b12f8809a14c4","name":"DriveBackupV2-1.2.3","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3012\/643\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3012643","gameVersion":"1.16","md5":"d83a38b3b33a9954716f4b399e756457","name":" DriveBackupV2-1.3.0","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3015\/900\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3015900","gameVersion":"1.16","md5":"ab78da842ba62dc3a3b5bdfe1b44b87e","name":"DriveBackupV2-1.3.1","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3024\/419\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3024419","gameVersion":"1.16","md5":"8eded9dadaac221622b39dfd0baaa6e9","name":"DriveBackupV2-1.3.2","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3039\/78\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3039078","gameVersion":"1.16","md5":"62a0b0aceafe0ec5cf7101c3926f21b1","name":"DriveBackupV2-1.3.3","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3047\/843\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3047843","gameVersion":"1.16","md5":"6bc519eb5372b15659564d37f4f71ad8","name":"DriveBackupV2-1.3.4","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3049\/311\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3049311","gameVersion":"1.16","md5":"2c09f6c637cd73900f63f59ec47f4f7a","name":"DriveBackupV2-1.3.5","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3086\/966\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3086966","gameVersion":"1.16","md5":"e3481ccdc8461d65923b26a5bf01506c","name":"DriveBackupV2-1.3.6","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3093\/903\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3093903","gameVersion":"1.16","md5":"bfebaeda0f00c06e78d738a78d62c882","name":"DriveBackupV2-1.3.7","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3203\/383\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3203383","gameVersion":"1.16","md5":"91c8b5f0f8a7fd8577a62b32490cc662","name":"DriveBackupV2-1.3.8","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3242\/690\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3242690","gameVersion":"1.16","md5":"f33b2a234c778446e4b70b64c6df983f","name":"DriveBackupV2-1.3.9","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3314\/633\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3314633","gameVersion":"1.16","md5":"f65a490a66d45368ac63f391e4a44fdd","name":" DriveBackupV2-1.4.0","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1623110400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3440\/945\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3440945","gameVersion":"1.17","md5":"a3d5965eaf0b77e470548d837491333a","name":"DriveBackupV2-1.5.2","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1623110400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3466\/443\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3466443","gameVersion":"1.17","md5":"0e222e2931dd38c6e5a13f2a4a187971","name":" DriveBackupV2-1.5.3","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1640476800000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3520\/141\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3520141","gameVersion":"1.18.1","md5":"bb13e8e2cf76d207d819727fbc3b8bfd","name":"DriveBackupV2-1.5.4","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1656374400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3680\/816\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3680816","gameVersion":"1.19.1","md5":"93c8914cb90c20580313ddcea802de5e","name":"DriveBackupV2-1.6.0","projectId":383461,"releaseType":"release"}]
+[18:53:43] [Server thread/INFO]: Pinont_ issued server command: /b
+[18:53:44] [ForkJoinPool.commonPool-worker-4/INFO]: [AdvancedServerList] No new update found. You're running the latest version!
+[18:53:49] [Server thread/INFO]: Pinont_ issued server command: /gamemode creative
+[18:53:49] [Server thread/INFO]: [Pinont_: Set own game mode to Creative Mode]
+[18:53:54] [Server thread/INFO]: Pinont_ issued server command: /b
+[18:53:56] [Server thread/INFO]: Pinont_ issued server command: /b
+[18:54:43] [Server thread/INFO]: Pinont_ issued server command: /reload confirm
+[18:54:43] [Server thread/INFO]: Pinont_: Please note that this command is not supported and may cause issues when using some plugins.
+[18:54:43] [Server thread/INFO]: Pinont_: If you encounter any issues please use the /stop command to restart your server.
+[18:54:43] [Server thread/INFO]: Using 4 threads for Netty based IO
+[18:54:43] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[18:54:43] [Server thread/INFO]: [AdvancedServerList] Disabling AdvancedServerList v3.0.0
+[18:54:43] [Server thread/INFO]: [AdvancedServerList] Saving playercache.json file...
+[18:54:43] [Server thread/INFO]: [AdvancedServerList] No players in cache to save. Skipping...
+[18:54:43] [Server thread/INFO]: [AdvancedServerList] Disabling Update Checker...
+[18:54:43] [Server thread/INFO]: [AdvancedServerList] AdvancedServerList disabled!
+[18:54:43] [Server thread/INFO]: [DriveBackupV2] Disabling DriveBackupV2 v1.6.0
+[18:54:43] [Server thread/INFO]: ChasingClub » Stopping plugin!
+[18:54:43] [Server thread/INFO]: [Armored] Disabling Armored v1.0-SNAPSHOT
+[18:54:43] [Server thread/INFO]: Armored plugin is disabled
+[18:54:43] [Server thread/INFO]: [FastAsyncWorldEdit] Disabling FastAsyncWorldEdit v2.6.0-SNAPSHOT-401;5cd9616
+[18:54:43] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[18:54:43] [Server thread/INFO]: Loaded 7 recipes
+[18:54:43] [Server thread/INFO]: [AdvancedServerList] Loading Libraries for plugin...
+[18:54:43] [Server thread/INFO]: [AdvancedServerList] Loading com.squareup.okhttp3:okhttp:4.10.0 from repo.papermc.io...
+[18:54:43] [Server thread/INFO]: [AdvancedServerList] Loading libraries complete!
+[18:54:43] [Server thread/WARN]: [PluginInitializerManager] ======== WARNING ========
+[18:54:43] [Server thread/WARN]: [PluginInitializerManager] You are reloading while having Paper plugins installed on your server.
+[18:54:43] [Server thread/WARN]: [PluginInitializerManager] Paper plugins do NOT support being reloaded. This will cause some unexpected issues.
+[18:54:43] [Server thread/WARN]: [PluginInitializerManager] =========================
+[18:54:43] [Server thread/INFO]: [FastAsyncWorldEdit] Loading server plugin FastAsyncWorldEdit v2.6.0-SNAPSHOT-401;5cd9616
+[18:54:43] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@2fd5fa38]
+[18:54:43] [Server thread/INFO]: [Armored] Loading server plugin Armored v1.0-SNAPSHOT
+[18:54:43] [Server thread/INFO]: [DriveBackupV2] Loading server plugin DriveBackupV2 v1.6.0
+[18:54:43] [Server thread/INFO]: [AdvancedServerList] Loading server plugin AdvancedServerList v3.0.0
+[18:54:43] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:54:43] [Server thread/INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v2.6.0-SNAPSHOT-401;5cd9616
+[18:54:43] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] LZ4 Compression Binding loaded successfully
+[18:54:44] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] ZSTD Compression Binding loaded successfully
+[18:54:44] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[18:54:44] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[18:54:44] [Server thread/WARN]: Server reload detected. This may cause various issues with FastAsyncWorldEdit and dependent plugins. Reloading the server is not advised.
+[18:54:44] [Server thread/WARN]: For more information why reloading is bad, see https://madelinemiller.dev/blog/problem-with-reload/
+[18:54:44] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.fawe.v1_19_R3.PaperweightFaweAdapter as the Bukkit adapter
+[18:54:45] [Server thread/INFO]: [Armored] Enabling Armored v1.0-SNAPSHOT
+[18:54:45] [Server thread/INFO]: Armored plugin is starting
+[18:54:45] [Server thread/INFO]: Armored connecting to database..
+[18:54:45] [Server thread/INFO]: Armored connected to database!
+[18:54:45] [Server thread/INFO]: Armored plugin has been started
+[18:54:45] [Server thread/INFO]: [DriveBackupV2] Enabling DriveBackupV2 v1.6.0
+[18:54:45] [Server thread/INFO]: ChasingClub » Config loaded!
+[18:54:45] [Server thread/INFO]: ChasingClub » Scheduling a backup to run at 12:00 PM every Monday, Tuesday, Friday, Thursday and Wednesday
+[18:54:45] [Server thread/INFO]: ChasingClub » Scheduling a backup to run at 10:00 PM every Saturday and Sunday
+[18:54:45] [Server thread/INFO]: ChasingClub » Metrics started
+[18:54:45] [Server thread/INFO]: [AdvancedServerList] Enabling AdvancedServerList v3.0.0
+[18:54:45] [Server thread/INFO]: [AdvancedServerList]            _____ _
+[18:54:45] [Server thread/INFO]: [AdvancedServerList]     /\    / ____| |
+[18:54:45] [Server thread/INFO]: [AdvancedServerList]    /  \  | (___ | |
+[18:54:45] [Server thread/INFO]: [AdvancedServerList]   / /\ \  \___ \| |
+[18:54:45] [Server thread/INFO]: [AdvancedServerList]  / ____ \ ____) | |____
+[18:54:45] [Server thread/INFO]: [AdvancedServerList] /_/    \_\_____/|______|
+[18:54:45] [Server thread/INFO]: [AdvancedServerList] 
+[18:54:45] [Server thread/INFO]: [AdvancedServerList] Starting AdvancedServerList v3.0.0...
+[18:54:45] [Server thread/INFO]: [AdvancedServerList] Platform: Paper git-Paper-507 (MC: 1.19.4)
+[18:54:45] [Server thread/INFO]: [AdvancedServerList] Loading config.yml...
+[18:54:45] [Server thread/INFO]: [AdvancedServerList] Successfully loaded config.yml!
+[18:54:45] [Server thread/INFO]: [AdvancedServerList] Loading profiles...
+[18:54:45] [Server thread/INFO]: [AdvancedServerList] Loaded default.yml
+[18:54:45] [Server thread/INFO]: [AdvancedServerList] Successfully loaded 1 profiles!
+[18:54:45] [Server thread/INFO]: [AdvancedServerList] Loading Commands...
+[18:54:45] [Server thread/INFO]: [AdvancedServerList] Registered /advancedserverlist:advancedserverlist
+[18:54:45] [Server thread/INFO]: [AdvancedServerList] Commands loaded!
+[18:54:45] [Server thread/INFO]: [AdvancedServerList] Loading events...
+[18:54:45] [Server thread/INFO]: [AdvancedServerList] Events loaded!
+[18:54:45] [Server thread/INFO]: [AdvancedServerList] Loading playercache.json...
+[18:54:45] [Server thread/INFO]: [AdvancedServerList] No playercache.json file present. Skipping...
+[18:54:45] [Server thread/INFO]: [AdvancedServerList] Loading bStats metrics. Disable it in the global config under /plugins/bstats/
+[18:54:45] [Server thread/INFO]: [AdvancedServerList] Metrics loaded!
+[18:54:45] [Server thread/INFO]: [AdvancedServerList] AdvancedServerList is ready!
+[18:54:45] [AdvancedServerList Update-Thread/INFO]: [AdvancedServerList] Checking for a new update...
+[18:54:45] [Server thread/INFO]: Pinont_: Reload complete.
+[18:54:45] [Server thread/INFO]: Timings Reset
+[18:54:45] [Craft Scheduler Thread - 11 - DriveBackupV2/INFO]: ChasingClub » Checking for updates...
+[18:54:45] [Craft Scheduler Thread - 11 - DriveBackupV2/INFO]: ChasingClub » Sending request https://api.curseforge.com/servermods/files?projectids=383461
+[18:54:45] [Paper Async Command Builder Thread Pool - 6/WARN]: java.nio.channels.OverlappingFileLockException
+[18:54:45] [Paper Async Command Builder Thread Pool - 6/WARN]: 	at java.base/sun.nio.ch.FileLockTable.checkList(FileLockTable.java:229)
+[18:54:45] [Paper Async Command Builder Thread Pool - 6/WARN]: 	at java.base/sun.nio.ch.FileLockTable.add(FileLockTable.java:123)
+[18:54:45] [Paper Async Command Builder Thread Pool - 6/WARN]: 	at java.base/sun.nio.ch.FileChannelImpl.lock(FileChannelImpl.java:1276)
+[18:54:45] [Paper Async Command Builder Thread Pool - 6/WARN]: 	at java.base/java.nio.channels.FileChannel.lock(FileChannel.java:1089)
+[18:54:45] [Paper Async Command Builder Thread Pool - 6/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.fastasyncworldedit.core.extent.clipboard.DiskOptimizedClipboard.init(DiskOptimizedClipboard.java:326)
+[18:54:45] [Paper Async Command Builder Thread Pool - 6/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.fastasyncworldedit.core.extent.clipboard.DiskOptimizedClipboard.<init>(DiskOptimizedClipboard.java:180)
+[18:54:45] [Paper Async Command Builder Thread Pool - 6/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.fastasyncworldedit.core.extent.clipboard.DiskOptimizedClipboard.<init>(DiskOptimizedClipboard.java:160)
+[18:54:45] [Paper Async Command Builder Thread Pool - 6/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.fastasyncworldedit.core.extent.clipboard.DiskOptimizedClipboard.loadFromFile(DiskOptimizedClipboard.java:241)
+[18:54:45] [Paper Async Command Builder Thread Pool - 6/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.entity.Player.loadClipboardFromDisk(Player.java:473)
+[18:54:45] [Paper Async Command Builder Thread Pool - 6/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.bukkit.BukkitPlayer.<init>(BukkitPlayer.java:112)
+[18:54:45] [Paper Async Command Builder Thread Pool - 6/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.bukkit.WorldEditPlugin.wrapPlayer(WorldEditPlugin.java:562)
+[18:54:45] [Paper Async Command Builder Thread Pool - 6/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.bukkit.WorldEditPlugin.wrapCommandSender(WorldEditPlugin.java:592)
+[18:54:45] [Paper Async Command Builder Thread Pool - 6/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.bukkit.BukkitCommandInspector.lambda$testPermission$0(BukkitCommandInspector.java:80)
+[18:54:45] [Paper Async Command Builder Thread Pool - 6/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//org.enginehub.piston.inject.MapBackedValueStore.lambda$injectedValue$0(MapBackedValueStore.java:56)
+[18:54:45] [Paper Async Command Builder Thread Pool - 6/WARN]: 	at java.base/java.util.Optional.flatMap(Optional.java:289)
+[18:54:45] [Paper Async Command Builder Thread Pool - 6/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//org.enginehub.piston.inject.MapBackedValueStore.injectedValue(MapBackedValueStore.java:56)
+[18:54:45] [Paper Async Command Builder Thread Pool - 6/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//org.enginehub.piston.inject.InjectedValueAccess.injectedValue(InjectedValueAccess.java:44)
+[18:54:45] [Paper Async Command Builder Thread Pool - 6/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.command.util.PermissionCondition.satisfied(PermissionCondition.java:54)
+[18:54:45] [Paper Async Command Builder Thread Pool - 6/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.bukkit.BukkitCommandInspector.testPermission(BukkitCommandInspector.java:81)
+[18:54:45] [Paper Async Command Builder Thread Pool - 6/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.bukkit.util.DynamicPluginCommand.testPermissionSilent(DynamicPluginCommand.java:107)
+[18:54:45] [Paper Async Command Builder Thread Pool - 6/WARN]: 	at org.bukkit.craftbukkit.v1_19_R3.command.BukkitCommandWrapper.test(BukkitCommandWrapper.java:56)
+[18:54:45] [Paper Async Command Builder Thread Pool - 6/WARN]: 	at org.bukkit.craftbukkit.v1_19_R3.command.BukkitCommandWrapper.test(BukkitCommandWrapper.java:23)
+[18:54:45] [Paper Async Command Builder Thread Pool - 6/WARN]: 	at com.mojang.brigadier.tree.CommandNode.canUse(CommandNode.java:79)
+[18:54:45] [Paper Async Command Builder Thread Pool - 6/WARN]: 	at net.minecraft.commands.CommandDispatcher.a(CommandDispatcher.java:483)
+[18:54:45] [Paper Async Command Builder Thread Pool - 6/WARN]: 	at net.minecraft.commands.CommandDispatcher.sendAsync(CommandDispatcher.java:441)
+[18:54:45] [Paper Async Command Builder Thread Pool - 6/WARN]: 	at net.minecraft.commands.CommandDispatcher.lambda$sendCommands$5(CommandDispatcher.java:414)
+[18:54:45] [Paper Async Command Builder Thread Pool - 6/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[18:54:45] [Paper Async Command Builder Thread Pool - 6/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[18:54:45] [Paper Async Command Builder Thread Pool - 6/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[18:54:45] [Craft Scheduler Thread - 11 - DriveBackupV2/INFO]: ChasingClub » Received response for https://api.curseforge.com/servermods/files?projectids=383461 in 102.8ms
+[18:54:45] [Craft Scheduler Thread - 11 - DriveBackupV2/INFO]: ChasingClub » Req: None
+[18:54:45] [Craft Scheduler Thread - 11 - DriveBackupV2/INFO]: ChasingClub » Resp: [{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2957\/547\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2957547","gameVersion":"1.15","md5":"bd367bb25228ae095a621d736b429a42","name":"DriveBackupV2-1.0.0","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2959\/467\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2959467","gameVersion":"1.15","md5":"a2ddc47ba8d4c901a33900b1921aff1d","name":"DriveBackupV2-1.0.1","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2959\/534\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2959534","gameVersion":"1.15","md5":"e46ec216742ec49bf45ef370286db4d8","name":"DriveBackupV2-1.0.2","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2965\/924\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2965924","gameVersion":"1.15","md5":"61ac4efbbdb6c1945ee76dc1ae03b597","name":" DriveBackupV2-1.1.0","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2972\/470\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2972470","gameVersion":"1.15","md5":"96ff31341ecc55ff1e524b8d333bafb1","name":"DriveBackupV2-1.1.1","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2975\/734\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2975734","gameVersion":"1.15","md5":"6cc89859756fadc66827f3474d8bbdd4","name":" DriveBackupV2-1.2.0","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2982\/410\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2982410","gameVersion":"1.15","md5":"dc0800ccf2c4fbb7154c6fa500a57ed3","name":"DriveBackupV2-1.2.1","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2991\/768\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2991768","gameVersion":"1.16","md5":"fe230aafcf648d487c1b12f8809a14c4","name":"DriveBackupV2-1.2.3","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3012\/643\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3012643","gameVersion":"1.16","md5":"d83a38b3b33a9954716f4b399e756457","name":" DriveBackupV2-1.3.0","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3015\/900\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3015900","gameVersion":"1.16","md5":"ab78da842ba62dc3a3b5bdfe1b44b87e","name":"DriveBackupV2-1.3.1","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3024\/419\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3024419","gameVersion":"1.16","md5":"8eded9dadaac221622b39dfd0baaa6e9","name":"DriveBackupV2-1.3.2","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3039\/78\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3039078","gameVersion":"1.16","md5":"62a0b0aceafe0ec5cf7101c3926f21b1","name":"DriveBackupV2-1.3.3","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3047\/843\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3047843","gameVersion":"1.16","md5":"6bc519eb5372b15659564d37f4f71ad8","name":"DriveBackupV2-1.3.4","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3049\/311\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3049311","gameVersion":"1.16","md5":"2c09f6c637cd73900f63f59ec47f4f7a","name":"DriveBackupV2-1.3.5","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3086\/966\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3086966","gameVersion":"1.16","md5":"e3481ccdc8461d65923b26a5bf01506c","name":"DriveBackupV2-1.3.6","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3093\/903\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3093903","gameVersion":"1.16","md5":"bfebaeda0f00c06e78d738a78d62c882","name":"DriveBackupV2-1.3.7","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3203\/383\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3203383","gameVersion":"1.16","md5":"91c8b5f0f8a7fd8577a62b32490cc662","name":"DriveBackupV2-1.3.8","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3242\/690\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3242690","gameVersion":"1.16","md5":"f33b2a234c778446e4b70b64c6df983f","name":"DriveBackupV2-1.3.9","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3314\/633\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3314633","gameVersion":"1.16","md5":"f65a490a66d45368ac63f391e4a44fdd","name":" DriveBackupV2-1.4.0","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1623110400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3440\/945\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3440945","gameVersion":"1.17","md5":"a3d5965eaf0b77e470548d837491333a","name":"DriveBackupV2-1.5.2","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1623110400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3466\/443\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3466443","gameVersion":"1.17","md5":"0e222e2931dd38c6e5a13f2a4a187971","name":" DriveBackupV2-1.5.3","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1640476800000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3520\/141\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3520141","gameVersion":"1.18.1","md5":"bb13e8e2cf76d207d819727fbc3b8bfd","name":"DriveBackupV2-1.5.4","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1656374400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3680\/816\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3680816","gameVersion":"1.19.1","md5":"93c8914cb90c20580313ddcea802de5e","name":"DriveBackupV2-1.6.0","projectId":383461,"releaseType":"release"}]
+[18:54:46] [ForkJoinPool.commonPool-worker-5/INFO]: [AdvancedServerList] No new update found. You're running the latest version!
+[18:54:48] [Server thread/INFO]: Pinont_ issued server command: /b
+[18:54:53] [Server thread/INFO]: Pinont_ issued server command: /gamemode survival
+[18:54:53] [Server thread/INFO]: [Pinont_: Set own game mode to Survival Mode]
+[18:55:34] [Server thread/INFO]: Pinont_ issued server command: /gamemode creative
+[18:55:34] [Server thread/INFO]: [Pinont_: Set own game mode to Creative Mode]
+[18:55:37] [Server thread/INFO]: Pinont_ issued server command: /gamemode survival
+[18:55:37] [Server thread/INFO]: [Pinont_: Set own game mode to Survival Mode]
+[18:55:39] [Server thread/INFO]: Pinont_ issued server command: /b
+[18:56:47] [Server thread/INFO]: Pinont_ issued server command: /reload confirm
+[18:56:47] [Server thread/INFO]: Pinont_: Please note that this command is not supported and may cause issues when using some plugins.
+[18:56:47] [Server thread/INFO]: Pinont_: If you encounter any issues please use the /stop command to restart your server.
+[18:56:47] [Server thread/INFO]: Using 4 threads for Netty based IO
+[18:56:47] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[18:56:47] [Server thread/INFO]: [AdvancedServerList] Disabling AdvancedServerList v3.0.0
+[18:56:47] [Server thread/INFO]: [AdvancedServerList] Saving playercache.json file...
+[18:56:47] [Server thread/INFO]: [AdvancedServerList] No players in cache to save. Skipping...
+[18:56:47] [Server thread/INFO]: [AdvancedServerList] Disabling Update Checker...
+[18:56:47] [Server thread/INFO]: [AdvancedServerList] AdvancedServerList disabled!
+[18:56:47] [Server thread/INFO]: [DriveBackupV2] Disabling DriveBackupV2 v1.6.0
+[18:56:47] [Server thread/INFO]: ChasingClub » Stopping plugin!
+[18:56:47] [Server thread/INFO]: [Armored] Disabling Armored v1.0-SNAPSHOT
+[18:56:47] [Server thread/INFO]: Armored plugin is disabled
+[18:56:47] [Server thread/INFO]: [FastAsyncWorldEdit] Disabling FastAsyncWorldEdit v2.6.0-SNAPSHOT-401;5cd9616
+[18:56:47] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[18:56:47] [Server thread/INFO]: Loaded 7 recipes
+[18:56:48] [Server thread/INFO]: [AdvancedServerList] Loading Libraries for plugin...
+[18:56:48] [Server thread/INFO]: [AdvancedServerList] Loading com.squareup.okhttp3:okhttp:4.10.0 from repo.papermc.io...
+[18:56:48] [Server thread/INFO]: [AdvancedServerList] Loading libraries complete!
+[18:56:48] [Server thread/WARN]: [PluginInitializerManager] ======== WARNING ========
+[18:56:48] [Server thread/WARN]: [PluginInitializerManager] You are reloading while having Paper plugins installed on your server.
+[18:56:48] [Server thread/WARN]: [PluginInitializerManager] Paper plugins do NOT support being reloaded. This will cause some unexpected issues.
+[18:56:48] [Server thread/WARN]: [PluginInitializerManager] =========================
+[18:56:48] [Server thread/INFO]: [FastAsyncWorldEdit] Loading server plugin FastAsyncWorldEdit v2.6.0-SNAPSHOT-401;5cd9616
+[18:56:48] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@5f44ab1d]
+[18:56:48] [Server thread/INFO]: [Armored] Loading server plugin Armored v1.0-SNAPSHOT
+[18:56:48] [Server thread/INFO]: [DriveBackupV2] Loading server plugin DriveBackupV2 v1.6.0
+[18:56:48] [Server thread/INFO]: [AdvancedServerList] Loading server plugin AdvancedServerList v3.0.0
+[18:56:48] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[18:56:48] [Server thread/INFO]: [FastAsyncWorldEdit] Enabling FastAsyncWorldEdit v2.6.0-SNAPSHOT-401;5cd9616
+[18:56:48] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] LZ4 Compression Binding loaded successfully
+[18:56:48] [Server thread/INFO]: [com.fastasyncworldedit.core.Fawe] ZSTD Compression Binding loaded successfully
+[18:56:48] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[18:56:48] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[18:56:48] [Server thread/WARN]: Server reload detected. This may cause various issues with FastAsyncWorldEdit and dependent plugins. Reloading the server is not advised.
+[18:56:48] [Server thread/WARN]: For more information why reloading is bad, see https://madelinemiller.dev/blog/problem-with-reload/
+[18:56:48] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.fawe.v1_19_R3.PaperweightFaweAdapter as the Bukkit adapter
+[18:56:49] [Server thread/INFO]: [Armored] Enabling Armored v1.0-SNAPSHOT
+[18:56:49] [Server thread/INFO]: Armored plugin is starting
+[18:56:49] [Server thread/INFO]: Armored connecting to database..
+[18:56:49] [Server thread/INFO]: Armored connected to database!
+[18:56:49] [Server thread/INFO]: Armored plugin has been started
+[18:56:49] [Server thread/INFO]: [DriveBackupV2] Enabling DriveBackupV2 v1.6.0
+[18:56:49] [Server thread/INFO]: ChasingClub » Config loaded!
+[18:56:49] [Server thread/INFO]: ChasingClub » Scheduling a backup to run at 12:00 PM every Monday, Tuesday, Friday, Thursday and Wednesday
+[18:56:49] [Server thread/INFO]: ChasingClub » Scheduling a backup to run at 10:00 PM every Saturday and Sunday
+[18:56:49] [Server thread/INFO]: ChasingClub » Metrics started
+[18:56:49] [Server thread/INFO]: [AdvancedServerList] Enabling AdvancedServerList v3.0.0
+[18:56:49] [Server thread/INFO]: [AdvancedServerList]            _____ _
+[18:56:49] [Server thread/INFO]: [AdvancedServerList]     /\    / ____| |
+[18:56:49] [Server thread/INFO]: [AdvancedServerList]    /  \  | (___ | |
+[18:56:49] [Server thread/INFO]: [AdvancedServerList]   / /\ \  \___ \| |
+[18:56:49] [Server thread/INFO]: [AdvancedServerList]  / ____ \ ____) | |____
+[18:56:49] [Server thread/INFO]: [AdvancedServerList] /_/    \_\_____/|______|
+[18:56:49] [Server thread/INFO]: [AdvancedServerList] 
+[18:56:49] [Server thread/INFO]: [AdvancedServerList] Starting AdvancedServerList v3.0.0...
+[18:56:49] [Server thread/INFO]: [AdvancedServerList] Platform: Paper git-Paper-507 (MC: 1.19.4)
+[18:56:49] [Server thread/INFO]: [AdvancedServerList] Loading config.yml...
+[18:56:49] [Server thread/INFO]: [AdvancedServerList] Successfully loaded config.yml!
+[18:56:49] [Server thread/INFO]: [AdvancedServerList] Loading profiles...
+[18:56:49] [Server thread/INFO]: [AdvancedServerList] Loaded default.yml
+[18:56:49] [Server thread/INFO]: [AdvancedServerList] Successfully loaded 1 profiles!
+[18:56:49] [Server thread/INFO]: [AdvancedServerList] Loading Commands...
+[18:56:49] [Server thread/INFO]: [AdvancedServerList] Registered /advancedserverlist:advancedserverlist
+[18:56:49] [Server thread/INFO]: [AdvancedServerList] Commands loaded!
+[18:56:49] [Server thread/INFO]: [AdvancedServerList] Loading events...
+[18:56:49] [Server thread/INFO]: [AdvancedServerList] Events loaded!
+[18:56:49] [Server thread/INFO]: [AdvancedServerList] Loading playercache.json...
+[18:56:49] [Server thread/INFO]: [AdvancedServerList] No playercache.json file present. Skipping...
+[18:56:49] [Server thread/INFO]: [AdvancedServerList] Loading bStats metrics. Disable it in the global config under /plugins/bstats/
+[18:56:49] [Server thread/INFO]: [AdvancedServerList] Metrics loaded!
+[18:56:49] [Server thread/INFO]: [AdvancedServerList] AdvancedServerList is ready!
+[18:56:49] [AdvancedServerList Update-Thread/INFO]: [AdvancedServerList] Checking for a new update...
+[18:56:49] [Server thread/INFO]: Pinont_: Reload complete.
+[18:56:49] [Server thread/INFO]: Timings Reset
+[18:56:49] [Craft Scheduler Thread - 13 - DriveBackupV2/INFO]: ChasingClub » Checking for updates...
+[18:56:49] [Craft Scheduler Thread - 13 - DriveBackupV2/INFO]: ChasingClub » Sending request https://api.curseforge.com/servermods/files?projectids=383461
+[18:56:49] [Paper Async Command Builder Thread Pool - 7/WARN]: java.nio.channels.OverlappingFileLockException
+[18:56:49] [Paper Async Command Builder Thread Pool - 7/WARN]: 	at java.base/sun.nio.ch.FileLockTable.checkList(FileLockTable.java:229)
+[18:56:49] [Paper Async Command Builder Thread Pool - 7/WARN]: 	at java.base/sun.nio.ch.FileLockTable.add(FileLockTable.java:123)
+[18:56:49] [Paper Async Command Builder Thread Pool - 7/WARN]: 	at java.base/sun.nio.ch.FileChannelImpl.lock(FileChannelImpl.java:1276)
+[18:56:49] [Paper Async Command Builder Thread Pool - 7/WARN]: 	at java.base/java.nio.channels.FileChannel.lock(FileChannel.java:1089)
+[18:56:49] [Paper Async Command Builder Thread Pool - 7/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.fastasyncworldedit.core.extent.clipboard.DiskOptimizedClipboard.init(DiskOptimizedClipboard.java:326)
+[18:56:49] [Paper Async Command Builder Thread Pool - 7/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.fastasyncworldedit.core.extent.clipboard.DiskOptimizedClipboard.<init>(DiskOptimizedClipboard.java:180)
+[18:56:49] [Paper Async Command Builder Thread Pool - 7/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.fastasyncworldedit.core.extent.clipboard.DiskOptimizedClipboard.<init>(DiskOptimizedClipboard.java:160)
+[18:56:49] [Paper Async Command Builder Thread Pool - 7/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.fastasyncworldedit.core.extent.clipboard.DiskOptimizedClipboard.loadFromFile(DiskOptimizedClipboard.java:241)
+[18:56:49] [Paper Async Command Builder Thread Pool - 7/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.entity.Player.loadClipboardFromDisk(Player.java:473)
+[18:56:49] [Paper Async Command Builder Thread Pool - 7/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.bukkit.BukkitPlayer.<init>(BukkitPlayer.java:112)
+[18:56:49] [Paper Async Command Builder Thread Pool - 7/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.bukkit.WorldEditPlugin.wrapPlayer(WorldEditPlugin.java:562)
+[18:56:49] [Paper Async Command Builder Thread Pool - 7/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.bukkit.WorldEditPlugin.wrapCommandSender(WorldEditPlugin.java:592)
+[18:56:49] [Paper Async Command Builder Thread Pool - 7/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.bukkit.BukkitCommandInspector.lambda$testPermission$0(BukkitCommandInspector.java:80)
+[18:56:49] [Paper Async Command Builder Thread Pool - 7/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//org.enginehub.piston.inject.MapBackedValueStore.lambda$injectedValue$0(MapBackedValueStore.java:56)
+[18:56:49] [Paper Async Command Builder Thread Pool - 7/WARN]: 	at java.base/java.util.Optional.flatMap(Optional.java:289)
+[18:56:49] [Paper Async Command Builder Thread Pool - 7/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//org.enginehub.piston.inject.MapBackedValueStore.injectedValue(MapBackedValueStore.java:56)
+[18:56:49] [Paper Async Command Builder Thread Pool - 7/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//org.enginehub.piston.inject.InjectedValueAccess.injectedValue(InjectedValueAccess.java:44)
+[18:56:49] [Paper Async Command Builder Thread Pool - 7/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.command.util.PermissionCondition.satisfied(PermissionCondition.java:54)
+[18:56:49] [Paper Async Command Builder Thread Pool - 7/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.bukkit.BukkitCommandInspector.testPermission(BukkitCommandInspector.java:81)
+[18:56:49] [Paper Async Command Builder Thread Pool - 7/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.bukkit.util.DynamicPluginCommand.testPermissionSilent(DynamicPluginCommand.java:107)
+[18:56:49] [Paper Async Command Builder Thread Pool - 7/WARN]: 	at org.bukkit.craftbukkit.v1_19_R3.command.BukkitCommandWrapper.test(BukkitCommandWrapper.java:56)
+[18:56:49] [Paper Async Command Builder Thread Pool - 7/WARN]: 	at org.bukkit.craftbukkit.v1_19_R3.command.BukkitCommandWrapper.test(BukkitCommandWrapper.java:23)
+[18:56:49] [Paper Async Command Builder Thread Pool - 7/WARN]: 	at com.mojang.brigadier.tree.CommandNode.canUse(CommandNode.java:79)
+[18:56:49] [Paper Async Command Builder Thread Pool - 7/WARN]: 	at net.minecraft.commands.CommandDispatcher.a(CommandDispatcher.java:483)
+[18:56:49] [Paper Async Command Builder Thread Pool - 7/WARN]: 	at net.minecraft.commands.CommandDispatcher.sendAsync(CommandDispatcher.java:441)
+[18:56:49] [Paper Async Command Builder Thread Pool - 7/WARN]: 	at net.minecraft.commands.CommandDispatcher.lambda$sendCommands$5(CommandDispatcher.java:414)
+[18:56:49] [Paper Async Command Builder Thread Pool - 7/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[18:56:49] [Paper Async Command Builder Thread Pool - 7/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[18:56:49] [Paper Async Command Builder Thread Pool - 7/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[18:56:49] [Craft Scheduler Thread - 13 - DriveBackupV2/INFO]: ChasingClub » Received response for https://api.curseforge.com/servermods/files?projectids=383461 in 110.9ms
+[18:56:49] [Craft Scheduler Thread - 13 - DriveBackupV2/INFO]: ChasingClub » Req: None
+[18:56:49] [Craft Scheduler Thread - 13 - DriveBackupV2/INFO]: ChasingClub » Resp: [{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2957\/547\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2957547","gameVersion":"1.15","md5":"bd367bb25228ae095a621d736b429a42","name":"DriveBackupV2-1.0.0","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2959\/467\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2959467","gameVersion":"1.15","md5":"a2ddc47ba8d4c901a33900b1921aff1d","name":"DriveBackupV2-1.0.1","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2959\/534\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2959534","gameVersion":"1.15","md5":"e46ec216742ec49bf45ef370286db4d8","name":"DriveBackupV2-1.0.2","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2965\/924\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2965924","gameVersion":"1.15","md5":"61ac4efbbdb6c1945ee76dc1ae03b597","name":" DriveBackupV2-1.1.0","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2972\/470\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2972470","gameVersion":"1.15","md5":"96ff31341ecc55ff1e524b8d333bafb1","name":"DriveBackupV2-1.1.1","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2975\/734\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2975734","gameVersion":"1.15","md5":"6cc89859756fadc66827f3474d8bbdd4","name":" DriveBackupV2-1.2.0","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1576022400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2982\/410\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2982410","gameVersion":"1.15","md5":"dc0800ccf2c4fbb7154c6fa500a57ed3","name":"DriveBackupV2-1.2.1","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/2991\/768\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/2991768","gameVersion":"1.16","md5":"fe230aafcf648d487c1b12f8809a14c4","name":"DriveBackupV2-1.2.3","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3012\/643\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3012643","gameVersion":"1.16","md5":"d83a38b3b33a9954716f4b399e756457","name":" DriveBackupV2-1.3.0","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3015\/900\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3015900","gameVersion":"1.16","md5":"ab78da842ba62dc3a3b5bdfe1b44b87e","name":"DriveBackupV2-1.3.1","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3024\/419\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3024419","gameVersion":"1.16","md5":"8eded9dadaac221622b39dfd0baaa6e9","name":"DriveBackupV2-1.3.2","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3039\/78\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3039078","gameVersion":"1.16","md5":"62a0b0aceafe0ec5cf7101c3926f21b1","name":"DriveBackupV2-1.3.3","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3047\/843\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3047843","gameVersion":"1.16","md5":"6bc519eb5372b15659564d37f4f71ad8","name":"DriveBackupV2-1.3.4","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3049\/311\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3049311","gameVersion":"1.16","md5":"2c09f6c637cd73900f63f59ec47f4f7a","name":"DriveBackupV2-1.3.5","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3086\/966\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3086966","gameVersion":"1.16","md5":"e3481ccdc8461d65923b26a5bf01506c","name":"DriveBackupV2-1.3.6","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3093\/903\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3093903","gameVersion":"1.16","md5":"bfebaeda0f00c06e78d738a78d62c882","name":"DriveBackupV2-1.3.7","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3203\/383\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3203383","gameVersion":"1.16","md5":"91c8b5f0f8a7fd8577a62b32490cc662","name":"DriveBackupV2-1.3.8","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3242\/690\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3242690","gameVersion":"1.16","md5":"f33b2a234c778446e4b70b64c6df983f","name":"DriveBackupV2-1.3.9","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1592870400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3314\/633\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3314633","gameVersion":"1.16","md5":"f65a490a66d45368ac63f391e4a44fdd","name":" DriveBackupV2-1.4.0","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1623110400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3440\/945\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3440945","gameVersion":"1.17","md5":"a3d5965eaf0b77e470548d837491333a","name":"DriveBackupV2-1.5.2","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1623110400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3466\/443\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3466443","gameVersion":"1.17","md5":"0e222e2931dd38c6e5a13f2a4a187971","name":" DriveBackupV2-1.5.3","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1640476800000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3520\/141\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3520141","gameVersion":"1.18.1","md5":"bb13e8e2cf76d207d819727fbc3b8bfd","name":"DriveBackupV2-1.5.4","projectId":383461,"releaseType":"release"},{"dateReleased":"\/Date(1656374400000)\/","downloadUrl":"https:\/\/files.forgecdn.net\/files\/3680\/816\/DriveBackupV2.jar","fileName":"DriveBackupV2.jar","fileUrl":"https:\/\/www.curseforge.com\/minecraft\/bukkit-plugins\/drivebackupv2\/download\/3680816","gameVersion":"1.19.1","md5":"93c8914cb90c20580313ddcea802de5e","name":"DriveBackupV2-1.6.0","projectId":383461,"releaseType":"release"}]
+[18:56:50] [ForkJoinPool.commonPool-worker-6/INFO]: [AdvancedServerList] No new update found. You're running the latest version!
+[18:58:44] [OkHttp TaskRunner/WARN]: Exception in thread "OkHttp TaskRunner" java.lang.NoClassDefFoundError: kotlin/jvm/internal/Ref$IntRef
+[18:58:44] [OkHttp TaskRunner/WARN]: 	at okhttp3.internal.http2.Http2Connection.shutdown(Http2Connection.kt:419)
+[18:58:44] [OkHttp TaskRunner/WARN]: 	at okhttp3.internal.http2.Http2Connection.close$okhttp(Http2Connection.kt:449)
+[18:58:44] [OkHttp TaskRunner/WARN]: 	at okhttp3.internal.http2.Http2Connection$ReaderRunnable.invoke(Http2Connection.kt:627)
+[18:58:44] [OkHttp TaskRunner/WARN]: 	at okhttp3.internal.http2.Http2Connection$ReaderRunnable.invoke(Http2Connection.kt:609)
+[18:58:44] [OkHttp TaskRunner/WARN]: 	at okhttp3.internal.concurrent.TaskQueue$execute$1.runOnce(TaskQueue.kt:98)
+[18:58:44] [OkHttp TaskRunner/WARN]: 	at okhttp3.internal.concurrent.TaskRunner.runTask(TaskRunner.kt:116)
+[18:58:44] [OkHttp TaskRunner/WARN]: 	at okhttp3.internal.concurrent.TaskRunner.access$runTask(TaskRunner.kt:42)
+[18:58:44] [OkHttp TaskRunner/WARN]: 	at okhttp3.internal.concurrent.TaskRunner$runnable$1.run(TaskRunner.kt:65)
+[18:58:44] [OkHttp TaskRunner/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[18:58:44] [OkHttp TaskRunner/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[18:58:44] [OkHttp TaskRunner/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[18:58:44] [OkHttp TaskRunner/WARN]: Caused by: java.lang.ClassNotFoundException: kotlin.jvm.internal.Ref$IntRef
+[18:58:44] [OkHttp TaskRunner/WARN]: 	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+[18:58:44] [OkHttp TaskRunner/WARN]: 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:587)
+[18:58:44] [OkHttp TaskRunner/WARN]: 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+[18:58:44] [OkHttp TaskRunner/WARN]: 	... 11 more
+[18:59:46] [OkHttp TaskRunner/WARN]: Exception in thread "OkHttp TaskRunner" java.lang.NoClassDefFoundError: kotlin/jvm/internal/Ref$IntRef
+[18:59:46] [OkHttp TaskRunner/WARN]: 	at okhttp3.internal.http2.Http2Connection.shutdown(Http2Connection.kt:419)
+[18:59:46] [OkHttp TaskRunner/WARN]: 	at okhttp3.internal.http2.Http2Connection.close$okhttp(Http2Connection.kt:449)
+[18:59:46] [OkHttp TaskRunner/WARN]: 	at okhttp3.internal.http2.Http2Connection$ReaderRunnable.invoke(Http2Connection.kt:627)
+[18:59:46] [OkHttp TaskRunner/WARN]: 	at okhttp3.internal.http2.Http2Connection$ReaderRunnable.invoke(Http2Connection.kt:609)
+[18:59:46] [OkHttp TaskRunner/WARN]: 	at okhttp3.internal.concurrent.TaskQueue$execute$1.runOnce(TaskQueue.kt:98)
+[18:59:46] [OkHttp TaskRunner/WARN]: 	at okhttp3.internal.concurrent.TaskRunner.runTask(TaskRunner.kt:116)
+[18:59:46] [OkHttp TaskRunner/WARN]: 	at okhttp3.internal.concurrent.TaskRunner.access$runTask(TaskRunner.kt:42)
+[18:59:46] [OkHttp TaskRunner/WARN]: 	at okhttp3.internal.concurrent.TaskRunner$runnable$1.run(TaskRunner.kt:65)
+[18:59:46] [OkHttp TaskRunner/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[18:59:46] [OkHttp TaskRunner/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[18:59:46] [OkHttp TaskRunner/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[18:59:46] [OkHttp TaskRunner/WARN]: Caused by: java.lang.ClassNotFoundException: kotlin.jvm.internal.Ref$IntRef
+[18:59:46] [OkHttp TaskRunner/WARN]: 	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+[18:59:46] [OkHttp TaskRunner/WARN]: 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:587)
+[18:59:46] [OkHttp TaskRunner/WARN]: 	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520)
+[18:59:46] [OkHttp TaskRunner/WARN]: 	... 11 more
+[19:05:50] [Server thread/INFO]: Pinont_ issued server command: /ิ
+[19:05:51] [Server thread/INFO]: Pinont_ issued server command: /ิ
+[19:05:55] [Server thread/INFO]: Pinont_ issued server command: /b
+[19:06:08] [Server thread/INFO]: Pinont_ issued server command: /gamemode creative
+[19:06:08] [Server thread/INFO]: [Pinont_: Set own game mode to Creative Mode]
+[19:06:18] [Server thread/INFO]: Pinont_ issued server command: /clear
+[19:06:18] [Server thread/INFO]: [Pinont_: Removed 270 item(s) from player Pinont_]
+[19:07:00] [Server thread/INFO]: Pinont_ has reached the goal [Sky's the Limit]
+[19:09:50] [Server thread/INFO]: Pinont_ issued server command: /kill
+[19:09:50] [Server thread/INFO]: Pinont_ fell out of the world
+[19:09:50] [Server thread/INFO]: [Pinont_: Killed Pinont_]
+[19:10:21] [Server thread/INFO]: Pinont_ issued server command: /kill
+[19:10:21] [Server thread/INFO]: [Pinont_: Killed Pinont_]
+[19:10:26] [Server thread/INFO]: Pinont_ issued server command: /kill
+[19:10:26] [Server thread/INFO]: [Pinont_: Killed Pinont_]
+[19:10:32] [Server thread/INFO]: Pinont_ issued server command: /kill
+[19:10:32] [Server thread/INFO]: [Pinont_: Killed Pinont_]
+[19:10:37] [Server thread/INFO]: Pinont_ lost connection: Disconnected
+[19:10:37] [Server thread/INFO]: Pinont_ left the game
+[19:10:40] [User Authenticator #3/INFO]: UUID of player Pinont_ is 1ef0ba4a-36e1-42ee-820e-15946cc1dac9
+[19:10:40] [Paper Async Command Builder Thread Pool - 8/WARN]: java.nio.channels.OverlappingFileLockException
+[19:10:40] [Paper Async Command Builder Thread Pool - 8/WARN]: 	at java.base/sun.nio.ch.FileLockTable.checkList(FileLockTable.java:229)
+[19:10:40] [Paper Async Command Builder Thread Pool - 8/WARN]: 	at java.base/sun.nio.ch.FileLockTable.add(FileLockTable.java:123)
+[19:10:40] [Paper Async Command Builder Thread Pool - 8/WARN]: 	at java.base/sun.nio.ch.FileChannelImpl.lock(FileChannelImpl.java:1276)
+[19:10:40] [Paper Async Command Builder Thread Pool - 8/WARN]: 	at java.base/java.nio.channels.FileChannel.lock(FileChannel.java:1089)
+[19:10:40] [Paper Async Command Builder Thread Pool - 8/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.fastasyncworldedit.core.extent.clipboard.DiskOptimizedClipboard.init(DiskOptimizedClipboard.java:326)
+[19:10:40] [Paper Async Command Builder Thread Pool - 8/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.fastasyncworldedit.core.extent.clipboard.DiskOptimizedClipboard.<init>(DiskOptimizedClipboard.java:180)
+[19:10:40] [Paper Async Command Builder Thread Pool - 8/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.fastasyncworldedit.core.extent.clipboard.DiskOptimizedClipboard.<init>(DiskOptimizedClipboard.java:160)
+[19:10:40] [Paper Async Command Builder Thread Pool - 8/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.fastasyncworldedit.core.extent.clipboard.DiskOptimizedClipboard.loadFromFile(DiskOptimizedClipboard.java:241)
+[19:10:40] [Paper Async Command Builder Thread Pool - 8/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.entity.Player.loadClipboardFromDisk(Player.java:473)
+[19:10:40] [Paper Async Command Builder Thread Pool - 8/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.bukkit.BukkitPlayer.<init>(BukkitPlayer.java:112)
+[19:10:40] [Paper Async Command Builder Thread Pool - 8/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.bukkit.WorldEditPlugin.wrapPlayer(WorldEditPlugin.java:562)
+[19:10:40] [Paper Async Command Builder Thread Pool - 8/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.bukkit.WorldEditPlugin.wrapCommandSender(WorldEditPlugin.java:592)
+[19:10:40] [Paper Async Command Builder Thread Pool - 8/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.bukkit.BukkitCommandInspector.lambda$testPermission$0(BukkitCommandInspector.java:80)
+[19:10:40] [Paper Async Command Builder Thread Pool - 8/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//org.enginehub.piston.inject.MapBackedValueStore.lambda$injectedValue$0(MapBackedValueStore.java:56)
+[19:10:40] [Paper Async Command Builder Thread Pool - 8/WARN]: 	at java.base/java.util.Optional.flatMap(Optional.java:289)
+[19:10:40] [Paper Async Command Builder Thread Pool - 8/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//org.enginehub.piston.inject.MapBackedValueStore.injectedValue(MapBackedValueStore.java:56)
+[19:10:40] [Paper Async Command Builder Thread Pool - 8/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//org.enginehub.piston.inject.InjectedValueAccess.injectedValue(InjectedValueAccess.java:44)
+[19:10:40] [Paper Async Command Builder Thread Pool - 8/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.command.util.PermissionCondition.satisfied(PermissionCondition.java:54)
+[19:10:40] [Paper Async Command Builder Thread Pool - 8/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.worldedit.bukkit.BukkitCommandInspector.testPermission(BukkitCommandInspector.java:81)
+[19:10:40] [Paper Async Command Builder Thread Pool - 8/WARN]: 	at FastAsyncWorldEdit-Bukkit-2.6.0-SNAPSHOT-401.jar//com.sk89q.bukkit.util.DynamicPluginCommand.testPermissionSilent(DynamicPluginCommand.java:107)
+[19:10:40] [Paper Async Command Builder Thread Pool - 8/WARN]: 	at org.bukkit.craftbukkit.v1_19_R3.command.BukkitCommandWrapper.test(BukkitCommandWrapper.java:56)
+[19:10:40] [Paper Async Command Builder Thread Pool - 8/WARN]: 	at org.bukkit.craftbukkit.v1_19_R3.command.BukkitCommandWrapper.test(BukkitCommandWrapper.java:23)
+[19:10:40] [Paper Async Command Builder Thread Pool - 8/WARN]: 	at com.mojang.brigadier.tree.CommandNode.canUse(CommandNode.java:79)
+[19:10:40] [Paper Async Command Builder Thread Pool - 8/WARN]: 	at net.minecraft.commands.CommandDispatcher.a(CommandDispatcher.java:483)
+[19:10:40] [Paper Async Command Builder Thread Pool - 8/WARN]: 	at net.minecraft.commands.CommandDispatcher.sendAsync(CommandDispatcher.java:441)
+[19:10:40] [Paper Async Command Builder Thread Pool - 8/WARN]: 	at net.minecraft.commands.CommandDispatcher.lambda$sendCommands$5(CommandDispatcher.java:414)
+[19:10:40] [Paper Async Command Builder Thread Pool - 8/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+[19:10:40] [Paper Async Command Builder Thread Pool - 8/WARN]: 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+[19:10:40] [Paper Async Command Builder Thread Pool - 8/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[19:10:40] [Server thread/INFO]: ChasingClub » Enabling automatic backups
+[19:10:40] [Server thread/INFO]: Pinont_ joined the game
+[19:10:40] [Server thread/INFO]: Pinont_[/171.100.76.72:49745] logged in with entity id 2803 at ([world]67.03821997193994, 65.0, 438.55395700362817)
+[19:10:42] [Server thread/INFO]: Pinont_ issued server command: /kill
+[19:10:42] [Server thread/INFO]: [Pinont_: Killed Pinont_]
+[19:10:46] [Server thread/INFO]: Pinont_ issued server command: /kill
+[19:10:46] [Server thread/INFO]: [Pinont_: Killed Pinont_]
+[19:10:50] [Server thread/INFO]: Pinont_ issued server command: /kill
+[19:10:50] [Server thread/INFO]: [Pinont_: Killed Pinont_]
+[19:10:53] [Server thread/INFO]: Pinont_ issued server command: /kill
+[19:10:53] [Server thread/INFO]: [Pinont_: Killed Pinont_]
+[19:11:00] [Server thread/INFO]: Pinont_ issued server command: /kill
+[19:11:00] [Server thread/INFO]: [Pinont_: Killed Pinont_]
+[19:46:21] [Server thread/INFO]: Pinont_ issued server command: /kill
+[19:46:21] [Server thread/INFO]: Pinont_ fell out of the world
+[19:46:21] [Server thread/INFO]: [Pinont_: Killed Pinont_]
+[19:46:30] [Server thread/INFO]: Pinont_ issued server command: /kill
+[19:46:30] [Server thread/INFO]: Pinont_ fell out of the world
+[19:46:30] [Server thread/INFO]: [Pinont_: Killed Pinont_]
+[19:46:37] [Server thread/INFO]: Pinont_ issued server command: /kill
+[19:46:37] [Server thread/INFO]: Pinont_ fell out of the world
+[19:46:37] [Server thread/INFO]: [Pinont_: Killed Pinont_]
+[19:46:41] [Server thread/INFO]: Pinont_ issued server command: /kill
+[19:46:41] [Server thread/INFO]: Pinont_ fell out of the world
+[19:46:41] [Server thread/INFO]: [Pinont_: Killed Pinont_]
+[19:46:45] [Server thread/INFO]: Pinont_ issued server command: /kill
+[19:46:45] [Server thread/INFO]: Pinont_ fell out of the world
+[19:46:45] [Server thread/INFO]: [Pinont_: Killed Pinont_]
+[19:46:47] [Server thread/INFO]: Pinont_ issued server command: /clear
+[19:46:47] [Server thread/INFO]: [Pinont_: Removed 4 item(s) from player Pinont_]
+[19:50:16] [Server thread/INFO]: Pinont_ issued server command: /clear
+[19:50:16] [Server thread/INFO]: [Pinont_: Removed 1 item(s) from player Pinont_]
+[19:54:33] [RCON Listener #1/INFO]: Thread RCON Client /192.168.50.1 started
+[19:54:34] [RCON Client /192.168.50.1 #2/INFO]: Thread RCON Client /192.168.50.1 shutting down
+[19:54:34] [RCON Listener #1/INFO]: Thread RCON Client /192.168.50.1 started
+[19:54:34] [RCON Client /192.168.50.1 #3/INFO]: Thread RCON Client /192.168.50.1 shutting down
+[19:54:35] [RCON Listener #1/INFO]: Thread RCON Client /192.168.50.1 started
+[19:54:35] [RCON Client /192.168.50.1 #4/INFO]: Thread RCON Client /192.168.50.1 shutting down
+[19:54:35] [RCON Listener #1/INFO]: Thread RCON Client /192.168.50.1 started
+[19:54:35] [RCON Client /192.168.50.1 #5/INFO]: Thread RCON Client /192.168.50.1 shutting down
+[19:54:43] [User Authenticator #4/INFO]: UUID of player KaitoHatsuharu is 104c28a6-f318-4a7e-bbbe-308da8633714
+[19:54:43] [Server thread/INFO]: KaitoHatsuharu joined the game
+[19:54:43] [Server thread/INFO]: KaitoHatsuharu[/192.168.50.1:55539] logged in with entity id 3110 at ([world]52.87102736263422, 65.0, 404.6901355241331)
