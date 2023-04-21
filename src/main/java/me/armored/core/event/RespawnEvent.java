@@ -1,10 +1,7 @@
 package me.armored.core.event;
 
 import me.armored.core.utils.Database;
-import org.bukkit.ChatColor;
-import org.bukkit.Location;
-import org.bukkit.Material;
-import org.bukkit.World;
+import org.bukkit.*;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
@@ -50,7 +47,8 @@ public class RespawnEvent implements Listener {
                         resultPlayerItem.get("leggings") == 6 &&
                         resultPlayerItem.get("boots") == 6
         ) {
-            player.getInventory().clear();
+            player.getInventory().clear(); // reset inventory
+            player.setLevel(0); // reset level
         } else {
             setItemPlayer(player.getInventory(), resultPlayerItem);
         }
@@ -62,11 +60,6 @@ public class RespawnEvent implements Listener {
         Player player = event.getPlayer();
         Map<String, Integer> resultPlayerItem = checkItemLevel(player.getInventory());
         player.sendMessage(resultPlayerItem.toString());
-        event.getItemsToKeep().add(player.getInventory().getArmorContents()[0]);
-        event.getItemsToKeep().add(player.getInventory().getArmorContents()[1]);
-        event.getItemsToKeep().add(player.getInventory().getArmorContents()[2]);
-        event.getItemsToKeep().add(player.getInventory().getArmorContents()[3]);
-
 
         if (
                 resultPlayerItem.get("helmet") == 6 &&
@@ -85,6 +78,26 @@ public class RespawnEvent implements Listener {
 //            player.sendMessage("Ban");
             Database.Ban(player, ChatColor.YELLOW + "Out of life", 12);
             player.kickPlayer("You cannot respawn right now!");
+        } else {
+
+            PlayerInventory playerInventory = player.getInventory();
+
+            if (!Optional.ofNullable(playerInventory.getHelmet()).isEmpty()) {
+                event.getItemsToKeep().add(player.getInventory().getHelmet());
+            }
+
+            if (!Optional.ofNullable(playerInventory.getChestplate()).isEmpty()) {
+                event.getItemsToKeep().add(player.getInventory().getChestplate());
+            }
+
+            if (!Optional.ofNullable(playerInventory.getLeggings()).isEmpty()) {
+
+                event.getItemsToKeep().add(player.getInventory().getLeggings());
+            }
+
+            if (!Optional.ofNullable(playerInventory.getBoots()).isEmpty()) {
+                event.getItemsToKeep().add(player.getInventory().getBoots());
+            }
         }
     }
     private Map<String, Integer> checkItemLevel(PlayerInventory playerInventory) {

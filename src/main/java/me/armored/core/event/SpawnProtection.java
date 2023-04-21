@@ -14,7 +14,7 @@ import org.bukkit.event.entity.*;
 import org.bukkit.event.player.PlayerCommandPreprocessEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 
-public class PlayerInteraction implements Listener {
+public class SpawnProtection implements Listener {
     @EventHandler
     public void onBreak(BlockBreakEvent e){ // edited by Pinont_
         Player p = e.getPlayer();
@@ -163,6 +163,16 @@ public class PlayerInteraction implements Listener {
             Player p = (Player) e.getEntity();
             if (!(Armored.build.contains(p.getName())) && (!Armored.barn.contains(p.getLocation()) || !Armored.farm.contains(p.getLocation())) && Armored.spawn.contains(p.getLocation())) {
                 e.setCancelled(true);
+            }
+        }
+    }
+
+    @EventHandler
+    public void onMobSpawn(EntitySpawnEvent event) {
+        if (event.getEntity() instanceof Mob) {
+            Mob mob = (Mob) event.getEntity();
+            if (Armored.spawn.contains(mob.getLocation())) {
+                event.setCancelled(true);
             }
         }
     }

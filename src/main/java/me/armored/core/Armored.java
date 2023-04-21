@@ -5,17 +5,12 @@ import me.armored.core.event.*;
 import me.armored.core.utils.Cuboid;
 import me.armored.core.utils.Database;
 import org.bukkit.Bukkit;
-import static org.bukkit.Material.*;
 
-import org.bukkit.Material;
 import org.bukkit.World;
-import org.bukkit.entity.Player;
-import org.bukkit.inventory.Recipe;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Iterator;
 
 public final class Armored extends JavaPlugin {
 
@@ -40,10 +35,7 @@ public final class Armored extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new JoinEvent(), this);
         getServer().getPluginManager().registerEvents(new RespawnEvent(), this);
         getServer().getPluginManager().registerEvents(new CraftEvents(), this);
-        getServer().getPluginManager().registerEvents(new PlayerInteraction(), this);
-//        Bukkit.getLogger().info("Registering Armor put on events");
-//        getServer().getPluginManager().registerEvents(new PlayerPutArmor(), this);
-        getServer().getPluginManager().registerEvents(new MobSpawnEvent(), this);
+        getServer().getPluginManager().registerEvents(new SpawnProtection(), this);
     }
 
     public void loadDatabase() {
