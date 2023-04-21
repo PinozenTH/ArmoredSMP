@@ -41,6 +41,9 @@ public final class Armored extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new RespawnEvent(), this);
         getServer().getPluginManager().registerEvents(new CraftEvents(), this);
         getServer().getPluginManager().registerEvents(new PlayerInteraction(), this);
+//        Bukkit.getLogger().info("Registering Armor put on events");
+//        getServer().getPluginManager().registerEvents(new PlayerPutArmor(), this);
+        getServer().getPluginManager().registerEvents(new MobSpawnEvent(), this);
     }
 
     public void loadDatabase() {

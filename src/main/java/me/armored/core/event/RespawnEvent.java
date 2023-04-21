@@ -44,14 +44,6 @@ public class RespawnEvent implements Listener {
 
         Map<String, Integer> resultPlayerItem = checkItemLevel(player.getInventory());
 
-        setItemPlayer(player.getInventory(), resultPlayerItem);
-
-    }
-
-    @EventHandler
-    public void onPlayerDeath(PlayerDeathEvent event) throws SQLException{
-        Player player = event.getPlayer();
-        Map<String, Integer> resultPlayerItem = checkItemLevel(player.getInventory());
         if (
                 resultPlayerItem.get("helmet") == 6 &&
                         resultPlayerItem.get("chestplate") == 6 &&
@@ -59,6 +51,29 @@ public class RespawnEvent implements Listener {
                         resultPlayerItem.get("boots") == 6
         ) {
             player.getInventory().clear();
+        } else {
+            setItemPlayer(player.getInventory(), resultPlayerItem);
+        }
+
+    }
+
+    @EventHandler
+    public void onPlayerDeath(PlayerDeathEvent event) throws SQLException{
+        Player player = event.getPlayer();
+        Map<String, Integer> resultPlayerItem = checkItemLevel(player.getInventory());
+        player.sendMessage(resultPlayerItem.toString());
+        event.getItemsToKeep().add(player.getInventory().getArmorContents()[0]);
+        event.getItemsToKeep().add(player.getInventory().getArmorContents()[1]);
+        event.getItemsToKeep().add(player.getInventory().getArmorContents()[2]);
+        event.getItemsToKeep().add(player.getInventory().getArmorContents()[3]);
+
+
+        if (
+                resultPlayerItem.get("helmet") == 6 &&
+                        resultPlayerItem.get("chestplate") == 6 &&
+                        resultPlayerItem.get("leggings") == 6 &&
+                        resultPlayerItem.get("boots") == 6
+        ) {
             if (player.getBedSpawnLocation() != null) {
 
                 Location bedSpawnLocation = player.getBedSpawnLocation();
@@ -68,7 +83,7 @@ public class RespawnEvent implements Listener {
 
             }
 //            player.sendMessage("Ban");
-            Database.Ban(player, ChatColor.YELLOW + "Out of life", 3);
+            Database.Ban(player, ChatColor.YELLOW + "Out of life", 12);
             player.kickPlayer("You cannot respawn right now!");
         }
     }

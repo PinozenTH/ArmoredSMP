@@ -1,7 +1,6 @@
 package me.armored.core.event;
 
 import me.armored.core.Armored;
-import net.kyori.adventure.text.Component;
 import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.block.data.Waterlogged;
@@ -90,17 +89,17 @@ public class PlayerInteraction implements Listener {
     }
     @EventHandler
     public void onChangeBlock(EntityChangeBlockEvent e){
-        if(e.getEntity() instanceof Player){
+        if (e.getEntity() instanceof Player) {
             Player p = (Player) e.getEntity();
             if (!(Armored.build.contains(p.getName())) && (!Armored.barn.contains(p.getLocation()) || !Armored.farm.contains(p.getLocation())) && Armored.spawn.contains(p.getLocation()) && e.getBlock().getType() != Material.BIG_DRIPLEAF) {
                 e.setCancelled(true);
             }
-        }else{
+        } else {
             e.setCancelled(true);
         }
     }
     @EventHandler
-    public void onCommandWE(PlayerCommandPreprocessEvent e){
+    public void onCommandWE(PlayerCommandPreprocessEvent e) {
         Player p = e.getPlayer();
         String cmd = e.getMessage();
         if(cmd.contains("//") || cmd.toLowerCase().contains("/br") || cmd.toLowerCase().contains("/wea")) {
@@ -123,11 +122,15 @@ public class PlayerInteraction implements Listener {
     @EventHandler
     public void Trident(ProjectileLaunchEvent e){
         if (e.getEntity() instanceof Trident) {
-            Player p = (Player) e.getEntity().getShooter();
-            if (p == null){return;}
-            if (p.getWorld() == Bukkit.getServer().getWorld("world")){
-                if ((!Armored.barn.contains(p.getLocation()) || !Armored.farm.contains(p.getLocation())) && Armored.spawn.contains(p.getLocation())) {
-                    e.setCancelled(true);
+            if (e.getEntity().getShooter() instanceof Player) {
+                Player p = (Player) e.getEntity().getShooter();
+                if (p == null) {
+                    return;
+                }
+                if (p.getWorld() == Bukkit.getServer().getWorld("world")) {
+                    if ((!Armored.barn.contains(p.getLocation()) || !Armored.farm.contains(p.getLocation())) && Armored.spawn.contains(p.getLocation())) {
+                        e.setCancelled(true);
+                    }
                 }
             }
         }
@@ -135,12 +138,17 @@ public class PlayerInteraction implements Listener {
     @EventHandler
     public void TridentHit(ProjectileHitEvent e){
         if (e.getEntity() instanceof Trident) {
-            Trident t = (Trident) e.getEntity();
-            Player p = (Player) e.getEntity().getShooter();
-            if (p == null){t.remove();return;}
-            if (p.getWorld() == Bukkit.getServer().getWorld("world")){
-                if ((!Armored.barn.contains(p.getLocation()) || !Armored.farm.contains(p.getLocation())) && Armored.spawn.contains(p.getLocation())) {
+            if (e.getEntity().getShooter() instanceof Player) {
+                Trident t = (Trident) e.getEntity();
+                Player p = (Player) e.getEntity().getShooter();
+                if (p == null) {
                     t.remove();
+                    return;
+                }
+                if (p.getWorld() == Bukkit.getServer().getWorld("world")) {
+                    if ((!Armored.barn.contains(p.getLocation()) || !Armored.farm.contains(p.getLocation())) && Armored.spawn.contains(p.getLocation())) {
+                        t.remove();
+                    }
                 }
             }
         }

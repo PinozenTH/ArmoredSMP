@@ -33,6 +33,12 @@ public class JoinEvent implements Listener {
                     long millisLeft = duration.getTime() - System.currentTimeMillis();
                     if (millisLeft > 0) {
                         message += "\nexpires: " + TimeUnit.MICROSECONDS.toMinutes(millisLeft) + " minutes.";
+                    } else {
+                        // ban expired, remove from database
+                        PreparedStatement ps2 = Database.connection.prepareStatement("DELETE FROM ban WHERE uuid=?");
+                        ps2.setString(1, player.getUniqueId().toString());
+                        ps2.executeUpdate();
+                        ps2.close();
                     }
                 }
                 e.setJoinMessage(null);

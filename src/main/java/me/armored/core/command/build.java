@@ -85,12 +85,10 @@ public class build implements CommandExecutor, TabExecutor {
         List<String> commands = new ArrayList<>();
 
         if (sender.isOp()) {
-            if (args.length == 0) {
-                for (Player player : Bukkit.getOnlinePlayers()) {
-                    commands.add(player.getName());
-                }
-                StringUtil.copyPartialMatches(args[0], commands, completions);
+            for (Player player : Bukkit.getOnlinePlayers()) {
+                commands.add(player.getName());
             }
+            StringUtil.copyPartialMatches(args[0], commands, completions);
 
             Collections.sort(completions);
 
