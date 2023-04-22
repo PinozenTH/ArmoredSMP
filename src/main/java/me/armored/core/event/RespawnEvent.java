@@ -38,11 +38,18 @@ public class RespawnEvent implements Listener {
         this.playerItem.put("boots", 0);
     }
 
+    private void reset(){
+        this.playerItem.put("helmet", 0);
+        this.playerItem.put("chestplate", 0);
+        this.playerItem.put("leggings", 0);
+        this.playerItem.put("boots", 0);
+    }
+
     @EventHandler
     public void onPlayerRespawn(PlayerRespawnEvent event) throws SQLException {
 
         Player player = event.getPlayer();
-        
+
         Map<String, Integer> resultPlayerItem = checkItemLevel(player.getInventory());
 
         if (
@@ -51,14 +58,12 @@ public class RespawnEvent implements Listener {
                         resultPlayerItem.get("leggings") == 6 &&
                         resultPlayerItem.get("boots") == 6
         ) {
-
             player.getInventory().clear(); // reset inventory
             player.setLevel(0); // reset level
-            resultPlayerItem = this.playerItem;
+            reset();
         } else {
             setItemPlayer(player.getInventory(), resultPlayerItem);
         }
-        player.sendMessage(Component.text("Respawn" + resultPlayerItem));
     }
 
     @EventHandler
@@ -73,6 +78,11 @@ public class RespawnEvent implements Listener {
                         resultPlayerItem.get("leggings") == 6 &&
                         resultPlayerItem.get("boots") == 6
         ) {
+            event.getDrops().remove(player.getInventory().getHelmet());
+            event.getDrops().remove(player.getInventory().getChestplate());
+            event.getDrops().remove(player.getInventory().getLeggings());
+            event.getDrops().remove(player.getInventory().getBoots());
+            player.getInventory().clear();
             if (player.getBedSpawnLocation() != null) {
 
                 Location bedSpawnLocation = player.getBedSpawnLocation();
