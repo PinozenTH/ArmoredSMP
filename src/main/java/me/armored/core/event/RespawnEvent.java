@@ -1,7 +1,11 @@
 package me.armored.core.event;
 
 import me.armored.core.utils.Database;
-import org.bukkit.*;
+import net.kyori.adventure.text.Component;
+import org.bukkit.ChatColor;
+import org.bukkit.Location;
+import org.bukkit.Material;
+import org.bukkit.World;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
@@ -40,26 +44,28 @@ public class RespawnEvent implements Listener {
         Player player = event.getPlayer();
 
         Map<String, Integer> resultPlayerItem = checkItemLevel(player.getInventory());
-
+        System.out.println(resultPlayerItem.toString());
         if (
                 resultPlayerItem.get("helmet") == 6 &&
                         resultPlayerItem.get("chestplate") == 6 &&
                         resultPlayerItem.get("leggings") == 6 &&
                         resultPlayerItem.get("boots") == 6
         ) {
+
             player.getInventory().clear(); // reset inventory
             player.setLevel(0); // reset level
+            resultPlayerItem = this.playerItem;
         } else {
             setItemPlayer(player.getInventory(), resultPlayerItem);
         }
-
+        player.sendMessage(Component.text("Respawn" + resultPlayerItem));
     }
 
     @EventHandler
-    public void onPlayerDeath(PlayerDeathEvent event) throws SQLException{
+    public void onPlayerDeath(PlayerDeathEvent event) throws SQLException {
         Player player = event.getPlayer();
         Map<String, Integer> resultPlayerItem = checkItemLevel(player.getInventory());
-        player.sendMessage(resultPlayerItem.toString());
+        player.sendMessage(Component.text("Dead = " + resultPlayerItem.toString()));
 
         if (
                 resultPlayerItem.get("helmet") == 6 &&
@@ -78,7 +84,13 @@ public class RespawnEvent implements Listener {
 //            player.sendMessage("Ban");
             Database.Ban(player, ChatColor.YELLOW + "Out of life", 12);
             player.kickPlayer("You cannot respawn right now!");
-        } else {
+        } else if ((resultPlayerItem.get("helmet") >= 1 ||
+                resultPlayerItem.get("chestplate") >= 1 ||
+                resultPlayerItem.get("leggings") >= 1 ||
+                resultPlayerItem.get("boots") >= 1) && (resultPlayerItem.get("helmet") <= 6 ||
+                resultPlayerItem.get("chestplate") <= 6 ||
+                resultPlayerItem.get("leggings") <= 6 ||
+                resultPlayerItem.get("boots") <= 6)) {
 
             PlayerInventory playerInventory = player.getInventory();
 
@@ -100,6 +112,7 @@ public class RespawnEvent implements Listener {
             }
         }
     }
+
     private Map<String, Integer> checkItemLevel(PlayerInventory playerInventory) {
         Map<String, Integer> playerItem = this.playerItem;
 
@@ -297,6 +310,18 @@ public class RespawnEvent implements Listener {
             case DIAMOND_HELMET, DIAMOND_CHESTPLATE, DIAMOND_LEGGINGS, DIAMOND_BOOTS -> 5;
             case NETHERITE_HELMET, NETHERITE_CHESTPLATE, NETHERITE_LEGGINGS, NETHERITE_BOOTS -> 6;
             default -> 0;
+        };
+    }
+
+    private Material setItemByLevelHelmet(int level) {
+        return switch (level) {
+            case 1 -> LEATHER_HELMET;
+            case 2 -> CHAINMAIL_HELMET;
+            case 3 -> IRON_HELMET;
+            case 4 -> GOLDEN_HELMET;
+            case 5 -> DIAMOND_HELMET;
+            case 6 -> NETHERITE_HELMET;
+            default -> AIR;
         };
     }
 
