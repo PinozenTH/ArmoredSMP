@@ -95,20 +95,19 @@ public class RespawnEvent implements Listener {
             PlayerInventory playerInventory = player.getInventory();
 
             if (!Optional.ofNullable(playerInventory.getHelmet()).isEmpty()) {
-                event.getItemsToKeep().add(player.getInventory().getHelmet());
+                setItemHelmet(playerInventory, true, setItemByLevelHelmet(resultPlayerItem.get("helmet")));
             }
 
             if (!Optional.ofNullable(playerInventory.getChestplate()).isEmpty()) {
-                event.getItemsToKeep().add(player.getInventory().getChestplate());
+                setItemChestplate(playerInventory, true, setItemLevelChestplate(resultPlayerItem.get("chestplate")));
             }
 
             if (!Optional.ofNullable(playerInventory.getLeggings()).isEmpty()) {
-
-                event.getItemsToKeep().add(player.getInventory().getLeggings());
+                setItemLeggings(playerInventory, true, setItemLevelLeggings(resultPlayerItem.get("leggings")));
             }
 
             if (!Optional.ofNullable(playerInventory.getBoots()).isEmpty()) {
-                event.getItemsToKeep().add(player.getInventory().getBoots());
+                setItemBoots(playerInventory, true, setItemLevelBoots(resultPlayerItem.get("boots")));
             }
         }
     }
@@ -161,71 +160,92 @@ public class RespawnEvent implements Listener {
 
         switch (result.get(numPlayerItem)) {
             case "helmet" -> {
-                setItemHelmet(playerInventory);
+                setItemHelmet(playerInventory, false, null);
             }
             case "chestplate" -> {
-                setItemChestplate(playerInventory);
+                setItemChestplate(playerInventory, false, null);
             }
             case "leggings" -> {
-                setItemLeggings(playerInventory);
+                setItemLeggings(playerInventory, false, null);
             }
             case "boots" -> {
-                setItemBoots(playerInventory);
+                setItemBoots(playerInventory, false, null);
             }
         }
     }
 
 
-    private void setItemHelmet(PlayerInventory playerInventory) {
+    private void setItemHelmet(PlayerInventory playerInventory, boolean isKeep, Material itemSet) {
         ItemStack helmet = playerInventory.getHelmet();
 
-        if (Optional.ofNullable(helmet).isEmpty()) {
-            helmet = new ItemStack(setItemLevelHelmet(air));
+        if (isKeep) {
+            helmet.setType(itemSet);
             helmet.setItemMeta(setItemMetaHelmet(helmet));
-            playerInventory.setHelmet(helmet);
         } else {
-            helmet.setType(setItemLevelHelmet(Optional.of(helmet).get()));
-            helmet.setItemMeta(setItemMetaHelmet(helmet));
+            if (Optional.ofNullable(helmet).isEmpty()) {
+                helmet = new ItemStack(setItemLevelHelmet(air));
+                helmet.setItemMeta(setItemMetaHelmet(helmet));
+                playerInventory.setHelmet(helmet);
+            } else {
+                helmet.setType(setItemLevelHelmet(Optional.of(helmet).get()));
+                helmet.setItemMeta(setItemMetaHelmet(helmet));
+            }
         }
     }
 
-    private void setItemChestplate(PlayerInventory playerInventory) {
+    private void setItemChestplate(PlayerInventory playerInventory, boolean isKeep, Material itemSet) {
         ItemStack chestplate = playerInventory.getChestplate();
 
-        if (Optional.ofNullable(chestplate).isEmpty()) {
-            chestplate = new ItemStack(setItemLevelChestplate(air));
+        if (isKeep) {
+            chestplate.setType(itemSet);
             chestplate.setItemMeta(setItemMetaChestplate(chestplate));
-            playerInventory.setChestplate(chestplate);
         } else {
-            chestplate.setType(setItemLevelChestplate(Optional.of(chestplate).get()));
-            chestplate.setItemMeta(setItemMetaChestplate(chestplate));
-        }
+            if (Optional.ofNullable(chestplate).isEmpty()) {
+                chestplate = new ItemStack(setItemLevelChestplate(air));
+                chestplate.setItemMeta(setItemMetaChestplate(chestplate));
+                playerInventory.setChestplate(chestplate);
+            } else {
+                chestplate.setType(setItemLevelChestplate(Optional.of(chestplate).get()));
+                chestplate.setItemMeta(setItemMetaChestplate(chestplate));
+            }
 
+        }
     }
 
-    private void setItemLeggings(PlayerInventory playerInventory) {
+    private void setItemLeggings(PlayerInventory playerInventory, boolean isKeep, Material itemSet) {
         ItemStack leggings = playerInventory.getLeggings();
 
-        if (Optional.ofNullable(leggings).isEmpty()) {
-            leggings = new ItemStack(setItemLevelLeggings(air));
+        if (isKeep) {
+            leggings.setType(itemSet);
             leggings.setItemMeta(setItemMetaLeggings(leggings));
-            playerInventory.setLeggings(leggings);
         } else {
-            leggings.setType(setItemLevelLeggings(Optional.of(leggings).get()));
-            leggings.setItemMeta(setItemMetaLeggings(leggings));
+            if (Optional.ofNullable(leggings).isEmpty()) {
+                leggings = new ItemStack(setItemLevelLeggings(air));
+                leggings.setItemMeta(setItemMetaLeggings(leggings));
+                playerInventory.setLeggings(leggings);
+            } else {
+                leggings.setType(setItemLevelLeggings(Optional.of(leggings).get()));
+                leggings.setItemMeta(setItemMetaLeggings(leggings));
+            }
         }
+
     }
 
-    private void setItemBoots(PlayerInventory playerInventory) {
+    private void setItemBoots(PlayerInventory playerInventory, boolean isKeep, Material itemSet) {
         ItemStack boots = playerInventory.getBoots();
 
-        if (Optional.ofNullable(boots).isEmpty()) {
-            boots = new ItemStack(setItemLevelBoots(air));
+        if (isKeep) {
+            boots.setType(itemSet);
             boots.setItemMeta(setItemMetaBoots(boots));
-            playerInventory.setBoots(boots);
         } else {
-            boots.setType(setItemLevelBoots(Optional.of(boots).get()));
-            boots.setItemMeta(setItemMetaBoots(boots));
+            if (Optional.ofNullable(boots).isEmpty()) {
+                boots = new ItemStack(setItemLevelBoots(air));
+                boots.setItemMeta(setItemMetaBoots(boots));
+                playerInventory.setBoots(boots);
+            } else {
+                boots.setType(setItemLevelBoots(Optional.of(boots).get()));
+                boots.setItemMeta(setItemMetaBoots(boots));
+            }
         }
     }
 
