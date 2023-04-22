@@ -42,9 +42,9 @@ public class RespawnEvent implements Listener {
     public void onPlayerRespawn(PlayerRespawnEvent event) throws SQLException {
 
         Player player = event.getPlayer();
-
+        
         Map<String, Integer> resultPlayerItem = checkItemLevel(player.getInventory());
-        System.out.println(resultPlayerItem.toString());
+
         if (
                 resultPlayerItem.get("helmet") == 6 &&
                         resultPlayerItem.get("chestplate") == 6 &&
@@ -95,19 +95,23 @@ public class RespawnEvent implements Listener {
             PlayerInventory playerInventory = player.getInventory();
 
             if (!Optional.ofNullable(playerInventory.getHelmet()).isEmpty()) {
-                setItemHelmet(playerInventory, true, setItemByLevelHelmet(resultPlayerItem.get("helmet")));
+                event.getItemsToKeep().add(playerInventory.getHelmet());
+                event.getDrops().remove(playerInventory.getHelmet());
             }
 
             if (!Optional.ofNullable(playerInventory.getChestplate()).isEmpty()) {
-                setItemChestplate(playerInventory, true, setItemLevelChestplate(resultPlayerItem.get("chestplate")));
+                event.getItemsToKeep().add(playerInventory.getChestplate());
+                event.getDrops().remove(playerInventory.getChestplate());
             }
 
             if (!Optional.ofNullable(playerInventory.getLeggings()).isEmpty()) {
-                setItemLeggings(playerInventory, true, setItemLevelLeggings(resultPlayerItem.get("leggings")));
+                event.getItemsToKeep().add(playerInventory.getLeggings());
+                event.getDrops().remove(playerInventory.getLeggings());
             }
 
             if (!Optional.ofNullable(playerInventory.getBoots()).isEmpty()) {
-                setItemBoots(playerInventory, true, setItemLevelBoots(resultPlayerItem.get("boots")));
+                event.getItemsToKeep().add(playerInventory.getBoots());
+                event.getDrops().remove(playerInventory.getBoots());
             }
         }
     }
@@ -341,6 +345,42 @@ public class RespawnEvent implements Listener {
             case 4 -> GOLDEN_HELMET;
             case 5 -> DIAMOND_HELMET;
             case 6 -> NETHERITE_HELMET;
+            default -> AIR;
+        };
+    }
+
+    private Material setItemByLevelChestplate(int level) {
+        return switch (level) {
+            case 1 -> LEATHER_CHESTPLATE;
+            case 2 -> CHAINMAIL_CHESTPLATE;
+            case 3 -> IRON_CHESTPLATE;
+            case 4 -> GOLDEN_CHESTPLATE;
+            case 5 -> DIAMOND_CHESTPLATE;
+            case 6 -> NETHERITE_CHESTPLATE;
+            default -> AIR;
+        };
+    }
+
+    private Material setItemByLevelLeggings(int level) {
+        return switch (level) {
+            case 1 -> LEATHER_LEGGINGS;
+            case 2 -> CHAINMAIL_LEGGINGS;
+            case 3 -> IRON_LEGGINGS;
+            case 4 -> GOLDEN_LEGGINGS;
+            case 5 -> DIAMOND_LEGGINGS;
+            case 6 -> NETHERITE_LEGGINGS;
+            default -> AIR;
+        };
+    }
+
+    private Material setItemByLevelBoots(int level) {
+        return switch (level) {
+            case 1 -> LEATHER_BOOTS;
+            case 2 -> CHAINMAIL_BOOTS;
+            case 3 -> IRON_BOOTS;
+            case 4 -> GOLDEN_BOOTS;
+            case 5 -> DIAMOND_BOOTS;
+            case 6 -> NETHERITE_BOOTS;
             default -> AIR;
         };
     }
