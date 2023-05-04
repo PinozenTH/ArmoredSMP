@@ -36,6 +36,7 @@ public final class Armored extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new RespawnEvent(), this);
         getServer().getPluginManager().registerEvents(new CraftEvents(), this);
         getServer().getPluginManager().registerEvents(new SpawnProtection(), this);
+        getServer().getPluginManager().registerEvents(new ArmorChangeEvent(), this);
     }
 
     public void loadDatabase() {

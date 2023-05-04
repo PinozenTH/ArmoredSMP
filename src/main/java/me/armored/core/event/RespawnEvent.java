@@ -70,7 +70,7 @@ public class RespawnEvent implements Listener {
     public void onPlayerDeath(PlayerDeathEvent event) throws SQLException {
         Player player = event.getPlayer();
         Map<String, Integer> resultPlayerItem = checkItemLevel(player.getInventory());
-        player.sendMessage(Component.text("Dead = " + resultPlayerItem.toString()));
+//        player.sendMessage(Component.text("Dead = " + resultPlayerItem.toString()));
 
         if (
                 resultPlayerItem.get("helmet") == 6 &&
