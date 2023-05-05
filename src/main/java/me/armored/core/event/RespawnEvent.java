@@ -6,6 +6,8 @@ import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.World;
+import org.bukkit.attribute.Attribute;
+import org.bukkit.attribute.AttributeModifier;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
@@ -14,6 +16,7 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.PlayerDeathEvent;
 import org.bukkit.event.player.PlayerRespawnEvent;
+import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.inventory.meta.ItemMeta;
@@ -267,6 +270,10 @@ public class RespawnEvent implements Listener {
         ItemMeta itemMeta = item.getItemMeta();
         itemMeta.addEnchant(Enchantment.BINDING_CURSE, 1, true);
         itemMeta.setUnbreakable(true);
+        itemMeta.addAttributeModifier(Attribute.GENERIC_ARMOR, new AttributeModifier(UUID.randomUUID(), "Armor", -8, AttributeModifier.Operation.ADD_NUMBER));
+        itemMeta.addAttributeModifier(Attribute.GENERIC_ARMOR_TOUGHNESS, new AttributeModifier(UUID.randomUUID(), "Toughness", -3, AttributeModifier.Operation.ADD_NUMBER));
+        itemMeta.addAttributeModifier(Attribute.GENERIC_KNOCKBACK_RESISTANCE, new AttributeModifier(UUID.randomUUID(), "KnockbackResistance", -1, AttributeModifier.Operation.ADD_NUMBER));
+        itemMeta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
         return itemMeta;
     }
 
@@ -274,6 +281,10 @@ public class RespawnEvent implements Listener {
         ItemMeta itemMeta = item.getItemMeta();
         itemMeta.addEnchant(Enchantment.BINDING_CURSE, 1, true);
         itemMeta.setUnbreakable(true);
+        itemMeta.addAttributeModifier(Attribute.GENERIC_ARMOR, new AttributeModifier(UUID.randomUUID(), "Armor", -8, AttributeModifier.Operation.ADD_NUMBER));
+        itemMeta.addAttributeModifier(Attribute.GENERIC_ARMOR_TOUGHNESS, new AttributeModifier(UUID.randomUUID(), "Toughness", -3, AttributeModifier.Operation.ADD_NUMBER));
+        itemMeta.addAttributeModifier(Attribute.GENERIC_KNOCKBACK_RESISTANCE, new AttributeModifier(UUID.randomUUID(), "KnockbackResistance", -1, AttributeModifier.Operation.ADD_NUMBER));
+        itemMeta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
         return itemMeta;
     }
 
@@ -281,6 +292,10 @@ public class RespawnEvent implements Listener {
         ItemMeta itemMeta = item.getItemMeta();
         itemMeta.addEnchant(Enchantment.BINDING_CURSE, 1, true);
         itemMeta.setUnbreakable(true);
+        itemMeta.addAttributeModifier(Attribute.GENERIC_ARMOR, new AttributeModifier(UUID.randomUUID(), "Armor", -8, AttributeModifier.Operation.ADD_NUMBER));
+        itemMeta.addAttributeModifier(Attribute.GENERIC_ARMOR_TOUGHNESS, new AttributeModifier(UUID.randomUUID(), "Toughness", -3, AttributeModifier.Operation.ADD_NUMBER));
+        itemMeta.addAttributeModifier(Attribute.GENERIC_KNOCKBACK_RESISTANCE, new AttributeModifier(UUID.randomUUID(), "KnockbackResistance", -1, AttributeModifier.Operation.ADD_NUMBER));
+        itemMeta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
         return itemMeta;
     }
 
@@ -288,6 +303,10 @@ public class RespawnEvent implements Listener {
         ItemMeta itemMeta = item.getItemMeta();
         itemMeta.addEnchant(Enchantment.BINDING_CURSE, 1, true);
         itemMeta.setUnbreakable(true);
+        itemMeta.addAttributeModifier(Attribute.GENERIC_ARMOR, new AttributeModifier(UUID.randomUUID(), "Armor", -8, AttributeModifier.Operation.ADD_NUMBER));
+        itemMeta.addAttributeModifier(Attribute.GENERIC_ARMOR_TOUGHNESS, new AttributeModifier(UUID.randomUUID(), "Toughness", -3, AttributeModifier.Operation.ADD_NUMBER));
+        itemMeta.addAttributeModifier(Attribute.GENERIC_KNOCKBACK_RESISTANCE, new AttributeModifier(UUID.randomUUID(), "KnockbackResistance", -1, AttributeModifier.Operation.ADD_NUMBER));
+        itemMeta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
         return itemMeta;
     }
 

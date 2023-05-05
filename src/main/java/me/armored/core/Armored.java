@@ -7,6 +7,7 @@ import me.armored.core.utils.Database;
 import org.bukkit.Bukkit;
 
 import org.bukkit.World;
+import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.sql.SQLException;
@@ -19,6 +20,10 @@ public final class Armored extends JavaPlugin {
     public static Cuboid spawn = new Cuboid(world, 33, 81, 395, 92, 44, 458);
     public static Cuboid farm = new Cuboid(world, 81, 64, 449, 45, 65, 454);
     public static Cuboid barn = new Cuboid(world, 57, 72, 438, 47, 73, 415);
+    public static Plugin plugin;
+    public Armored() {
+        plugin = this;
+    }
 
     @Override
     public void onEnable() {
