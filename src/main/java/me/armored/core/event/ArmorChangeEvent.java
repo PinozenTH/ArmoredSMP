@@ -72,16 +72,22 @@ public class ArmorChangeEvent implements Listener {
             itemMeta.setUnbreakable(true);
             itemMeta.addEnchant(Enchantment.BINDING_CURSE, 1, true);
             itemMeta.removeEnchant(Enchantment.VANISHING_CURSE);
-            itemMeta.addAttributeModifier(Attribute.GENERIC_ARMOR, new AttributeModifier(UUID.randomUUID(), "Armor", -8, AttributeModifier.Operation.ADD_NUMBER));
-            itemMeta.addAttributeModifier(Attribute.GENERIC_ARMOR_TOUGHNESS, new AttributeModifier(UUID.randomUUID(), "Toughness", -3, AttributeModifier.Operation.ADD_NUMBER));
-            itemMeta.addAttributeModifier(Attribute.GENERIC_KNOCKBACK_RESISTANCE, new AttributeModifier(UUID.randomUUID(), "KnockbackResistance", -1, AttributeModifier.Operation.ADD_NUMBER));
-            itemMeta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
+            if (itemMeta.getItemFlags().contains(ItemFlag.HIDE_ATTRIBUTES)) {
+                itemMeta.addAttributeModifier(Attribute.GENERIC_ARMOR, new AttributeModifier(UUID.randomUUID(), "Armor", -8, AttributeModifier.Operation.ADD_NUMBER));
+                itemMeta.addAttributeModifier(Attribute.GENERIC_ARMOR_TOUGHNESS, new AttributeModifier(UUID.randomUUID(), "Toughness", -3, AttributeModifier.Operation.ADD_NUMBER));
+                itemMeta.addAttributeModifier(Attribute.GENERIC_KNOCKBACK_RESISTANCE, new AttributeModifier(UUID.randomUUID(), "KnockbackResistance", -1, AttributeModifier.Operation.ADD_NUMBER));
+                itemMeta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
+            }
             return itemMeta;
         } else if (isAllowPutOff(item.getType())) {
             ItemMeta itemMeta = item.getItemMeta();
             itemMeta.addEnchant(Enchantment.VANISHING_CURSE, 1, true);
-            itemMeta.addAttributeModifier(Attribute.GENERIC_ARMOR, new AttributeModifier(UUID.randomUUID(), "Armor", -8, AttributeModifier.Operation.ADD_NUMBER));
-            itemMeta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
+            if (itemMeta.getItemFlags().contains(ItemFlag.HIDE_ATTRIBUTES)) {
+                itemMeta.addAttributeModifier(Attribute.GENERIC_ARMOR, new AttributeModifier(UUID.randomUUID(), "Armor", -8, AttributeModifier.Operation.ADD_NUMBER));
+                itemMeta.addAttributeModifier(Attribute.GENERIC_ARMOR_TOUGHNESS, new AttributeModifier(UUID.randomUUID(), "Toughness", -3, AttributeModifier.Operation.ADD_NUMBER));
+                itemMeta.addAttributeModifier(Attribute.GENERIC_KNOCKBACK_RESISTANCE, new AttributeModifier(UUID.randomUUID(), "KnockbackResistance", -1, AttributeModifier.Operation.ADD_NUMBER));
+                itemMeta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
+            }
             return itemMeta;
         } else {
             return null;
