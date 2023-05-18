@@ -19,7 +19,7 @@ public class ban implements CommandExecutor, TabExecutor {
 
     @Override
     public boolean onCommand( CommandSender sender, Command cmd, String string, String[] args) {
-        if (sender.isOp()) {
+        if ((sender.hasPermission("rank.admin"))) {
             if (args.length > 0) {
                 Player target = Bukkit.getPlayer(args[0]);
                 if (target == null) {
@@ -54,7 +54,7 @@ public class ban implements CommandExecutor, TabExecutor {
         List<String> completions = new ArrayList<>();
         List<String> commands = new ArrayList<>();
 
-        if (sender.isOp()) {
+        if ((sender.hasPermission("rank.admin"))) {
             if (args.length == 0) {
                 for (Player player : Bukkit.getOnlinePlayers()) {
                     commands.add(player.getName());

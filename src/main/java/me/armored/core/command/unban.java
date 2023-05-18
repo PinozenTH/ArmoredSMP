@@ -25,7 +25,7 @@ public class unban implements CommandExecutor, TabExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-        if (sender.isOp()) {
+        if ((sender.hasPermission("rank.admin"))) {
             if (args.length == 1) {
                 try {
                     PreparedStatement ps = connection.prepareStatement("DELETE FROM ban WHERE uuid=?");
@@ -53,7 +53,7 @@ public class unban implements CommandExecutor, TabExecutor {
         List<String> completions = new ArrayList<>();
         List<String> commands = new ArrayList<>();
 
-        if (sender.isOp()) {
+        if ((sender.hasPermission("rank.admin"))) {
             if (args.length == 0) {
                 for (Player player : Bukkit.getOnlinePlayers()) {
                     commands.add(player.getName());

@@ -28,7 +28,7 @@ public class build implements CommandExecutor, TabExecutor {
                     sender.sendMessage(ChatColor.RED+"Can't use this command with console.");
                     return true;
                 }else{
-                    if (!(sender.hasPermission("rank.builder"))) {
+                    if (!(sender.hasPermission("rank.builder")) || !(sender.hasPermission("rank.admin"))) {
                         sender.sendMessage(ChatColor.RED+"You don't have permission to do that!");
                         return true;
                     }else {
@@ -45,7 +45,7 @@ public class build implements CommandExecutor, TabExecutor {
                     }
                 }
             }else if (args.length == 1) {
-                if (!(sender.hasPermission("rank.owner"))) {
+                if (!(sender.hasPermission("rank.builder")) || !(sender.hasPermission("rank.admin"))) {
                     sender.sendMessage(ChatColor.RED+"You don't have permission to do that!");
                     return true;
                 }else {
