@@ -6,9 +6,11 @@ import me.armored.core.utils.Cuboid;
 import me.armored.core.utils.Database;
 import org.bukkit.Bukkit;
 
+import org.bukkit.ChatColor;
 import org.bukkit.World;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.scheduler.BukkitRunnable;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -54,6 +56,21 @@ public final class Armored extends JavaPlugin {
             e.printStackTrace();
             Bukkit.getLogger().info("Armored could not initialize database.");
         }
+
+        new BukkitRunnable() {
+            @Override
+            public void run() {
+                try {
+                    Database database = new Database();
+                    database.initializeDatabase();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                    Bukkit.getLogger().info("Armored could not connect to database.");
+                    return;
+                }
+            }
+        }.runTaskTimer(this, 0L, 2400L);
+
     }
 
     // ban player
