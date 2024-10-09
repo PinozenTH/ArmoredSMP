@@ -1,0 +1,12 @@
+name: ArmoredSMP-Rework
+version: '1.0-SNAPSHOT'
+main: com.pinont.armoredsmp.Core
+api-version: '1.21'
+
+commands:
+  armoredsmp:
+    description: Main command for ArmoredSMP
+    permission: armoredsmp.user
+    aliases:
+    - asmp
+    - armored
