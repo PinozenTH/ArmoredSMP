@@ -1,0 +1,139 @@
+name: Armored
+version: '${project.version}'
+main: me.armored.core.Armored
+api-version: 1.20
+
+commands:
+  reload:
+    description: "Reload plugin"
+    usage: /reload
+    permission: ranks.admin
+  ban:
+    description: "Ban player"
+    usage: /ban <player> <reason>
+    permission: ranks.admin
+
+  unban:
+    description: "Unban player"
+    usage: /unban <player>
+    permission: ranks.admin
+
+  gmc:
+    description: "Change gamemode to creative"
+    usage: /gmc <player>
+    permission: ranks.admin
+  gma:
+    description: "Change gamemode to adventure"
+    usage: /gma <player>
+    permission: ranks.admin
+  gms:
+    description: "Change gamemode to survival"
+    usage: /gms <player>
+    permission: ranks.admin
+  gmsp:
+    description: "Change gamemode to spectator"
+    usage: /gmsp <player>
+    permission: ranks.admin
+
+  b:
+    description: enable/disable build mode
+    usage: /build <player>
+    aliases: [ b, build ]
+    permission: ranks.builder
+
+  bypass:
+    description: bypass dead event
+    usage: /bypass <player>
+    permission: ranks.bypass
+
+  start:
+    description: start armored smp
+    usage: /start
+    permission: ranks.admin
+
+  nick:
+    description: change display name for player
+    usage: /nick <name>
+    permission: ranks.admin
+
+  vanish:
+    description: make player disapear
+    usage: /vanish
+    permission: ranks.vanish
+    aliases:
+      - v
+
+  color:
+    description: color a player name
+    usage: /color <color> <player>
+    permission: ranks.team
+
+  resetColor:
+    description: reset all player color
+    usage: /resetColor
+    permission: ranks.team
+
+  minigame:
+    description: start minigame
+    usage: /minigame
+    permission: ranks.admin
+
+  fly:
+    description: enable/disable fly mode
+    usage: /fly <player>
+    permission: ranks.fly
+
+  challenge:
+    description: start challenge
+    usage: /challenge <player>
+    permission: ranks.admin
+
+  heartreset:
+    description: reset heart
+    usage: /heartreset <player>
+    permission: ranks.admin
+
+  immortal:
+    description: make player immortal
+    usage: /immortal <player>
+    permission: ranks.admin
+
+#  harvest:
+#    description: Festival events world
+#    usage: /fest
+#    permission: ranks.user
+
+permissions:
+  ranks.admin:
+    description: "admin"
+
+  ranks.bypass:
+    description: "bypass"
+    children:
+      - ranks.admin
+
+  ranks.fly:
+    description: "fly"
+    children:
+      - ranks.admin
+
+  ranks.vanish:
+    description: "vanish"
+    children:
+      - ranks.admin
+
+  ranks.user:
+    description: "user"
+
+  ranks.builder:
+    description: "builder"
+    children:
+      - ranks.admin
+
+  ranks.team:
+    description: "team"
+    children:
+      - ranks.team.color
+
+  ranks.team.color:
+    description: "team color"

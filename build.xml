@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<!DOCTYPE xml>
+<project name="ArmoredSMP" default="Build">
+
+    <xmlproperty file="pom.xml" prefix="pom" keeproot="false"/>
+
+    <target name="Build">
+        <jar jarfile="./Test-Server/plugins/core.jar" basedir="./target/classes/" includes="**/*">
+        </jar>
+    </target>
+</project>
