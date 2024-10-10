@@ -105,8 +105,7 @@
         <dependency>
             <groupId>com.pinont</groupId>
             <artifactId>pixlib</artifactId>
-            <version>0.1</version>
-            <scope>compile</scope>
+            <version>1.0-snapshot</version>
         </dependency>
     </dependencies>
 </project>
